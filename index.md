@@ -1,7 +1,7 @@
 ---
 layout: frontpage
 title: TR
-description: Tommaso is a PhD candidate at Humboldt University. 
+description: Tommaso is a PhD candidate at Humboldt University.
 keywords: hello, goodbye
 ---
 ---
@@ -13,8 +13,8 @@ keywords: hello, goodbye
     <div class="row-fluid">
         <div class="span5">
             Tommaso C. Rosati<br/>
-            Email: rosatito at math.hu-berlin.de<br/>
-	    PhD candidate @ Humboldt University, Berlin <br/>
+            Email: rosati-tom at fu-berlin.de<br/>
+	    PhD candidate @ Freie Universität, Berlin <br/>
 	    Supervisor: Professor Nicolas Perkowski <br/>
         </div>
 
@@ -32,7 +32,7 @@ keywords: hello, goodbye
 <div class="navbar">
   <div class="navbar-inner">
       <ul class="nav">
-          <li><a href="https://github.com/T-Cornelis">GitHub</a></li>
+          <li><a href="https://github.com/rosati-tom">GitHub</a></li>
       </ul>
   </div>
 </div>
