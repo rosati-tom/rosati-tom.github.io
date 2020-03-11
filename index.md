@@ -1,8 +1,8 @@
 ---
 layout: frontpage
 title: TR
-description: Tommaso is a PhD candidate at Humboldt University.
-keywords: hello, goodbye
+description: Tommaso Rosati is a PhD candidate at Freie Universität Berlin.
+keywords: Rosati, Mathematics, Math, Tommaso, Stochastic
 ---
 ---
 

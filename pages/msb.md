@@ -7,7 +7,9 @@ description: MSG Zirkel Webseite
 
 #### Wichtige Infos:
 
- - ##### Nächster Termin: Dorotheenstr. 24, Raum 1.307, Datum: 4.3.2020, Uhrzeit: 16:30
+ - ###### Infos zum Coronavirus wird es demnächst geben.
+
+ - ##### Nächster Termin: Dorotheenstr. 24, Raum 1.307, Datum: 18.3.2020, Uhrzeit: 16:30
 
 (Derselbe Raum wie alle anderen Male: Haus 1, 3OG)
 
@@ -70,6 +72,9 @@ Figur unten gilt (wobei die zwei Linien parallel sein müssen):
 
  - Neunzehnter <a href="../aufgaben/Aufgabe_19_2.pdf">Zettel</a> (zum 11.3). In der
    Vorlesung zuvor wurden folgende <a href="../aufgaben/Aufgabe_19_1.pdf">Probleme</a> besprochen.
+
+ - Zwanzigster <a href="../aufgaben/Aufgabe_20_2.pdf">Zettel</a> (zum 18.3). In der
+   Vorlesung zuvor wurden folgende <a href="../aufgaben/Aufgabe_20_1.pdf">Probleme</a> besprochen.
 
 #### Regeln für die Hausaufgaben:
 
