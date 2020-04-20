@@ -4,15 +4,15 @@ title: Research articles
 description: All articles that appeared in preprint form at least.
 ---
 
- - ##### The spatial Λ-Fleming-Viot process in a random environment with Alksander Klimek. Preprint [here](https://arxiv.org/abs/2004.05931).
+ - ##### The spatial Λ-Fleming-Viot process in a random environment, with Aleksander Klimek. Preprint [here](https://arxiv.org/abs/2004.05931).
 
  - ##### Synchronization for KPZ. Preprint [here](https://arxiv.org/abs/1907.06278).
 
  - ##### Killed rough super-Brownian motion. Preprint [here](https://arxiv.org/abs/1906.11054).
 
- - ##### Rough super-Brownian motion with Nicolas Perkowski. Preprint [here](https://arxiv.org/abs/1905.05825).
+ - ##### Rough super-Brownian motion, with Nicolas Perkowski. Preprint [here](https://arxiv.org/abs/1905.05825).
 
- - ##### The KPZ equation on the real line with Nicolas Perkowski, Electron. J. Probab. 24 (2019), paper no. 117. Preprint [here](https://arxiv.org/abs/1808.00354).
+ - ##### The KPZ equation on the real line, with Nicolas Perkowski, Electron. J. Probab. 24 (2019), paper no. 117. Preprint [here](https://arxiv.org/abs/1808.00354).
 
  - ##### Modelled distributions of Triebel-Lizorkin type, with Sebastian Hensel, accepted for publication in Studia Mathematica. Preprint [here](https://arxiv.org/abs/1709.05202).
 
