@@ -7,11 +7,9 @@ description: MSG Zirkel Webseite
 
 #### Wichtige Infos:
 
- - #### Infos zum Coronavirus wird es demnächst geben.
+ - #### Der Zirkel findet weiter im Online Format statt, auf der Plattform <a href="https://discordapp.com/">Discord</a>.
 
- - ##### Nächster Termin: Dorotheenstr. 24, Raum 1.307, Datum: 18.3.2020, Uhrzeit: 16:30
-
-(Derselbe Raum wie alle anderen Male: Haus 1, 3OG)
+ - ##### Nächster Termin: Discord Server: <https://discord.gg/SQnWMW>, Datum: 22.4.2020, Uhrzeit: 16:00
 
 #### Aufgaben:
 
@@ -73,8 +71,8 @@ Figur unten gilt (wobei die zwei Linien parallel sein müssen):
  - Neunzehnter <a href="../aufgaben/Aufgabe_19_2.pdf">Zettel</a> (zum 11.3). In der
    Vorlesung zuvor wurden folgende <a href="../aufgaben/Aufgabe_19_1.pdf">Probleme</a> besprochen.
 
- - Zwanzigster <a href="../aufgaben/Aufgabe_20_2.pdf">Zettel</a> (zum 18.3). In der
-   Vorlesung zuvor wurden folgende <a href="../aufgaben/Aufgabe_20_1.pdf">Probleme</a> besprochen.
+ - <!--Zwanzigster <a href="../aufgaben/Aufgabe_20_2.pdf">Zettel</a> (zum 18.3).--> In der letzten
+   Vorlesung wurden folgende <a href="../aufgaben/Aufgabe_20_1.pdf">Probleme</a> besprochen.
 
 #### Regeln für die Hausaufgaben:
 
