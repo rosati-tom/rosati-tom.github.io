@@ -4,7 +4,7 @@ title: Research articles
 description: All articles that appeared in preprint form at least.
 ---
 
- - ##### The spatial Λ-Fleming-Viot process in a random environment with Alksander Klimek. Prepring [here](https://arxiv.org/abs/2004.05931)
+ - ##### The spatial Λ-Fleming-Viot process in a random environment with Alksander Klimek. Preprint [here](https://arxiv.org/abs/2004.05931).
 
  - ##### Synchronization for KPZ. Preprint [here](https://arxiv.org/abs/1907.06278).
 
