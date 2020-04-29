@@ -76,7 +76,7 @@ Figur unten gilt (wobei die zwei Linien parallel sein müssen):
 
  - Einundzwanzigster <a href="../aufgaben/Aufgabe_21.pdf">Zettel</a>.
 
- - Zweiundzwanzigster <a href="../aufgaben/Aufgabe_21.pdf">Zettel</a>.
+ - Zweiundzwanzigster <a href="../aufgaben/Aufgabe_22.pdf">Zettel</a>.
 
 #### Regeln für die Hausaufgaben:
 
