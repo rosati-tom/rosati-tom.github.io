@@ -1,6 +1,6 @@
 ---
 layout: frontpage
-title: TR
+title: Tommaso C. Rosati
 description: Tommaso Rosati is a PhD candidate at Freie Universität Berlin.
 keywords: Rosati, Mathematics, Math, Tommaso, Stochastic
 ---
