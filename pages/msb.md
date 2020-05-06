@@ -78,6 +78,8 @@ Figur unten gilt (wobei die zwei Linien parallel sein müssen):
 
  - Zweiundzwanzigster <a href="../aufgaben/Aufgabe_22.pdf">Zettel</a>.
 
+ - Dreiundzwanzigster <a href="../aufgaben/Aufgabe_23.pdf">Zettel</a>.
+
 #### Regeln für die Hausaufgaben:
 
  - Ein (1) Beweis **soweit wie möglich vollkommen aufschreiben** und abgeben. Dabei kann man zwischen allen Aufgaben mit
