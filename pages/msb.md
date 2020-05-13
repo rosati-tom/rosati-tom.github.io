@@ -9,7 +9,7 @@ description: MSG Zirkel Webseite
 
  - #### Der Zirkel findet weiter im Online Format statt, auf der Plattform <a href="https://discordapp.com/">Discord</a> (links zum Server sind nur 24h gültig, bitte schreibt mir, falls ihr beitreten möchtet).
 
- - ##### Nächster Termin: 13.5.2020, Uhrzeit: 16:00
+ - ##### Nächster Termin: 20.5.2020, Uhrzeit: 16:00
 
 #### Aufgaben:
 
@@ -79,6 +79,8 @@ Figur unten gilt (wobei die zwei Linien parallel sein müssen):
  - Zweiundzwanzigster <a href="../aufgaben/Aufgabe_22.pdf">Zettel</a>.
 
  - Dreiundzwanzigster <a href="../aufgaben/Aufgabe_23.pdf">Zettel</a>.
+
+ - Vierundzwanzigster <a href="../aufgaben/Aufgabe_24.pdf">Zettel</a>.
 
 #### Regeln für die Hausaufgaben:
 
