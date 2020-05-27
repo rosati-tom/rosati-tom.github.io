@@ -82,7 +82,9 @@ Figur unten gilt (wobei die zwei Linien parallel sein müssen):
 
  - Vierundzwanzigster <a href="../aufgaben/Aufgabe_24.pdf">Zettel</a>.
 
-- Fuenfundzwanzigster <a href="../aufgaben/Aufgabe_25.pdf">Zettel</a>.
+ - Fuenfundzwanzigster <a href="../aufgaben/Aufgabe_25.pdf">Zettel</a>.
+
+ - Sechsundzwanzigster <a href="../aufgaben/Aufgabe_26.pdf">Zettel</a>.
 
 #### Regeln für die Hausaufgaben:
 
