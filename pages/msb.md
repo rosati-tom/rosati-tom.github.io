@@ -9,7 +9,7 @@ description: MSG Zirkel Webseite
 
  - #### Der Zirkel findet weiter im Online Format statt, auf der Plattform <a href="https://discordapp.com/">Discord</a> (links zum Server sind nur 24h gültig, bitte schreibt mir, falls ihr beitreten möchtet).
 
- - ##### Nächster Termin: 20.5.2020, Uhrzeit: 16:00
+ - ##### Nächster Termin: 17.6.2020, Uhrzeit: 16:00
 
 #### Aufgaben:
 
