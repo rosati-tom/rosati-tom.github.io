@@ -86,6 +86,8 @@ Figur unten gilt (wobei die zwei Linien parallel sein müssen):
 
  - Sechsundzwanzigster <a href="../aufgaben/Aufgabe_26.pdf">Zettel</a>.
 
+ - Siebenundzwanzigster <a href="../aufgaben/Aufgabe_27.pdf">Zettel</a>.
+
 #### Regeln für die Hausaufgaben:
 
  - Ein (1) Beweis **soweit wie möglich vollkommen aufschreiben** und abgeben. Dabei kann man zwischen allen Aufgaben mit
