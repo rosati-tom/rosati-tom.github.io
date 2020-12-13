@@ -1,7 +1,7 @@
 ---
 layout: frontpage
 title: Tommaso C. Rosati
-description: Tommaso Rosati is a PhD candidate at Freie Universität Berlin.
+description: Tommaso Rosati is a postdoc at Imperial College London.
 keywords: Rosati, Mathematics, Math, Tommaso, Stochastic
 ---
 ---
@@ -13,9 +13,9 @@ keywords: Rosati, Mathematics, Math, Tommaso, Stochastic
     <div class="row-fluid">
         <div class="span5">
             Tommaso C. Rosati<br/>
-            Email: rosati-tom at fu-berlin.de<br/>
-	    PhD candidate @ Freie Universität, Berlin <br/>
-	    Supervisor: Professor Nicolas Perkowski <br/>
+            Email: t.rosati at imperial.ac.uk<br/>
+	    Research associate (postdoc) @ Imperial College, London <br/>
+	    In the group of Prof. Martin Hairer <br/>
         </div>
 
         <div class="span2">
