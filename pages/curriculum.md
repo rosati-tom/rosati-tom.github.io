@@ -6,10 +6,11 @@ description: CV
 
 A short resume of my studies:
 
- - 2017-Now: PhD student (member of the BMS and the IRTG 1740).
+ - 2020-Now: Research associate at Imperial College, London.
 
- - 2015-2017: Master @ Humboldt University: master thesis "The KPZ
-   equation on the real line" (under the supervision of Professer Nicolas
+ - 2017-2020: PhD student @ FU Berlin (member of the BMS and the IRTG 1740, under the supervision of Professor Nicolas Perkowski).
+
+ - 2015-2017: Master @  HU Berlin (under the supervision of Professer Nicolas
    Perkowski).
 
  - 2012-2015: Bachelor @ Tor Vergata University: bachelor thesis on "Tropical
