@@ -8,7 +8,7 @@ I am a Harrison fellow at the University of Warwick, supported by a Leverhulme E
 
 I study topics in probability, stochastic analysis, stochastic PDEs.
 
-**Contact:** [t.rosati@warwick.ac.uk](mailto:t.rosati@warwick.ac.uk)
+**Contact:** [t.rosati@warwick.ac.uk](mailto:t.rosati@warwick.ac.uk).
 
 **In person:** room 1.11 of the mathematical sciences building.
 

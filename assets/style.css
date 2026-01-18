@@ -29,7 +29,8 @@ h1, h2, h3 { font-family: "Computer Modern Sans", sans-serif; }
 /* Let the text take remaining width */
 .intro-text {
   flex: 1 1 0;
-  max-width: 205px;
+  min-width: 210px;
+  max-width: 490px;
 }
 
 /* Fix a reasonable photo column width */
