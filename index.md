@@ -12,7 +12,10 @@ I study topics in probability, stochastic analysis, stochastic PDEs.
 
 **In person:** room 1.11 of the mathematical sciences building.
 
-**Office hours:** 17:00-18:00 Tuesday and 14:00-15:00 Thursday (write an email first).
+**Office hours:** 17:00-18:00 Tuesday and 14:00-15:00 Thursday (write an email
+first).
+
+**Curriculum:** here.
 
 
   </div>
