@@ -3,9 +3,14 @@
 #title: Tommaso Rosati 
 #description: Homepage 
 
+plugins:
+  - jekyll-remote-theme
+
+remote_theme: heiswayi/the-plain
+
 title: "Tommaso Rosati"
 email: "t.rosati@warwick.ac.uk"
 url: "https://rosati-tom.github.io"
-theme: minima
+#theme: minima
 
 markdown: kramdown
