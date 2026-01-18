@@ -15,7 +15,7 @@ I study topics in probability, stochastic analysis, stochastic PDEs.
 
 **In person:** room 1.11 of the mathematical sciences building.
 
-**Office hours:** 17:00-18:00 every Tuesday and 14:00-15:00 every Thursday (please write me an email first).
+**Office hours:** 17:00-18:00 Tuesday and 14:00-15:00 Thursday (write me an email first).
 
 **Teaching**
 
@@ -37,33 +37,40 @@ I study topics in probability, stochastic analysis, stochastic PDEs.
 > S. Punshon-Smith and J. Yi. <br> *Duke Math. J., under minor revision Arxiv.*
 
 > **[14]** "Quantitative instability for stochastic scalar reaction-diffusion
-> equations", with A. Blessing (Neamtu). <br> *Ann. Appl. Probab. (2025), to appear, Arxiv.*
+> equations", with A. Blessing. <br> *Ann. Appl. Probab. (2025), to appear, Arxiv.*
 
-> **[13]** "Spectral gap for projective processes of linear SPDEs", with M. Hairer, Comm. Amer. Math. Soc. (2025), Arxiv.
+> **[13]** "Spectral gap for projective processes of linear SPDEs", with M.
+> Hairer. <br> *Comm. Amer. Math. Soc. (2025), Arxiv.*
 
-> **[12]** "The Allen-Cahn equation with weakly critical random initial datum", with S. Gabriel and N. Zygouras, Probab. Theory Related Fields (2024), Arxiv.
+> **[12]** "The Allen-Cahn equation with weakly critical random initial datum",
+> with S. Gabriel and N. Zygouras. <br> *Probab. Theory Related Fields (2024), Arxiv.*
 
-> **[11]** "Synchronisation for scalar conservation laws via Dirichlet boundary", with A. Djurdjevac, Bernoulli (2024), Arxiv.
+> **[11]** "Synchronisation for scalar conservation laws via Dirichlet boundary", with A. Djurdjevac.<br> *Bernoulli (2024), Arxiv.*
 
-> **[10]**  "Global existence for perturbations of the 2D stochastic Navier-Stokes equations with space-time white noise", with M. Hairer, Ann. PDE (2024), Arxiv.
+> **[10]**  "Global existence for perturbations of the 2D stochastic
+> Navier-Stokes equations with space-time white noise", with M. Hairer. <br>
+> *Ann. PDE (2024), Arxiv.*
 
-> **[9]** "Lyapunov exponents in a slow environment", Stochastic Process. Appl. (2024), ArxivLink opens in a new windowLink opens in a new window.
+> **[9]** "Lyapunov exponents in a slow environment". <br> *Stochastic Process. Appl. (2024), Arxiv.*
 
-> **[8]** "The wave speed of an FKPP equation with jumps via coordinated branching", with A. Tobias, Electron. J. Probab. (2023). ArxivLink opens in a new windowLink opens in a new window.
+> **[8]** "The wave speed of an FKPP equation with jumps via coordinated
+> branching", with A. Tobias. <br> *Electron. J. Probab. (2023), Arxiv.*
 
-> **[7]** "The Allen-Cahn equation with generic initial datum", with M. Hairer and K. Le, Probab. Theory Related Fields (2023), ArxivLink opens in a new windowLink opens in a new window.
+> **[7]** "The Allen-Cahn equation with generic initial datum", with M. Hairer
+> and K. Le. <br> *Probab. Theory Related Fields (2023), Arxiv.*
 
-> **[6]** "The spatial Λ-Fleming-Viot process in a random environment", with A. Klimek, ArxivLink opens in a new windowLink opens in a new window, Ann. Appl. Probab. (2023). Arxiv.
+> **[6]** "The spatial Λ-Fleming-Viot process in a random environment", with A.
+> Klimek. <br> *Ann. Appl. Probab. (2023), Arxiv.*
 
-> **[5]** "A rough super-Brownian motion", with N. Perkowski, Ann. Probab. (2021), ArxivLink opens in a new winLink opens in a new window.
+> **[5]** "A rough super-Brownian motion", with N. Perkowski. <br> *Ann. Probab. (2021), Arxiv.*
 
-> **[4]** "Synchronization for KPZ", Stoch. Dyn. (2022), Arxiv.Link opens in a new windoLink opens in a new window
+> **[4]** "Synchronization for KPZ". <br> *Stoch. Dyn. (2022), Arxiv.*
 
-> **[3]** "Killed rough super-Brownian motion", Electron. Commun. Probab. (2020), open accessLink opens in a new windoLink opens in a new window.
+> **[3]** "Killed rough super-Brownian motion". <br> *Electron. Commun. Probab. (2020).*
 
-> **[2]** "Modelled distributions of Triebel-Lizorkin type", with S. Hensel, Studia Math. (2020), ArxivLink opens in a new windoLink opens in a new window.
+> **[2]** "Modelled distributions of Triebel-Lizorkin type", with S. Hensel. <br> *Studia Math. (2020).*
 
-> **[1]** "The KPZ equation on the real line", with N. Perkowski, Electron. J. Probab. (2019), open accessLink opens in a new windoLink opens in a new window.
+> **[1]** "The KPZ equation on the real line", with N. Perkowski. <br> *Electron. J. Probab. (2019).*
 
 **Outreach and other**
 
