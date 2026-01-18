@@ -19,10 +19,12 @@ I study topics in probability, stochastic analysis, partial differential equatio
 
 **Teaching**
 
-* 2025/26 Brownian Motion ()
-* 2024/25 Brownian Motion
+* 2025/26 Brownian Motion (MA4F7/ST403), Stochastic PDEs (ST924), and a reading group on the GMC.
+* 2024/25 Brownian Motion (MA4F7/ST403).
+* 2023/24 Brownian Motion (MA4F7/ST403), and Stochastic PDEs (ST924).
+* 2022/23 Brownian Motion (MA4F7/ST403).
 
-**Find my articles** on Arxiv or Scholar
+**Find my articles** on [Arxiv][https://arxiv.org/search/?searchtype=author&query=Rosati%2C+T] or [Scholar][https://scholar.google.com/citations?user=Xdj6H3gAAAAJ&hl=en]
 
 **Preprints**
 
