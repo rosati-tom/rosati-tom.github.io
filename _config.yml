@@ -1,4 +1,11 @@
 
-theme: jekyll-theme-minimal
-title: Tommaso Rosati 
-description: Homepage 
+#theme: jekyll-theme-minimal
+#title: Tommaso Rosati 
+#description: Homepage 
+
+title: "Tommaso Rosati"
+email: "t.rosati@warwick.ac.uk"
+url: "https://rosati-tom.github.io"
+theme: minima
+
+markdown: kramdown
