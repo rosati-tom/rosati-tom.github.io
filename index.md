@@ -28,7 +28,13 @@ I study topics in probability, stochastic analysis, partial differential equatio
 
 **Preprints**
 
+16. "Invariant measures for the open KPZ equation: an analytic perspective", in collaboration with A. Dunlap and Y. Gu, Arxiv.
+
 **Published or to accepted**
+
+15. A
+
+14. B
 
 **Outreach and other**
 
