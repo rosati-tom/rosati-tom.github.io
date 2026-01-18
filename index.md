@@ -66,6 +66,14 @@ S. Punshon-Smith and J. Yi. <br> *Duke Math. J., under minor revision.*
 
 **Outreach and other**
 
+
+* Some lecture notes for a mini-course of stochastic PDEs.
+* "Randomness is natural - an introduction to regularisation by noise", in collaboration with H. Elad-Altman and A. Djurdjevac, snapshots of modern mathematics from Oberwolfach.
+* I helped revamp the Probability at Warwick website. Check it out here!
+* Old simulations on GitHub.
+
+
 **Theses**
 
-**Short Curriculum (long version here)**
+* PhD thesis: "Singular SPDEs and Fluctuations of Particle Systems", open access.
+* Master thesis: "The KPZ equation on the real line".
