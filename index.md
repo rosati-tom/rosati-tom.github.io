@@ -6,7 +6,7 @@
 
 I am a Harrison fellow at the University of Warwick, supported by a Leverhulme Early Career Fellowship.
 
-I study topics in probability, stochastic analysis, stochastic PDEs.
+I study probability, stochastic analysis, stochastic PDEs.
 
 **Contact:** [t.rosati@warwick.ac.uk](mailto:t.rosati@warwick.ac.uk).
 
@@ -29,7 +29,7 @@ first).
 
 **Teaching**
 
-* 2025/26 Brownian Motion (MA4F7/ST403), Stochastic PDEs (ST924), <br> and a [reading group](/assets/gmc.md) on the GMC.
+* 2025/26 Brownian Motion (MA4F7/ST403), Stochastic PDEs (ST924), <br> and a [reading group](/gmc.md) on the GMC.
 * 2024/25 Brownian Motion (MA4F7/ST403).
 * 2023/24 Brownian Motion (MA4F7/ST403), and Stochastic PDEs (ST924).
 * 2022/23 Brownian Motion (MA4F7/ST403).
