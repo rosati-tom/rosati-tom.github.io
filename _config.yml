@@ -3,14 +3,21 @@
 #title: Tommaso Rosati 
 #description: Homepage 
 
+#plugins:
+  #- jekyll-remote-theme
+
+#remote_theme: heiswayi/the-plain
+
+title: "Tommaso Rosati"
+#description: "Mathematician — probability / SPDEs / …"
+
 plugins:
   - jekyll-remote-theme
 
-remote_theme: heiswayi/the-plain
+remote_theme: pages-themes/primer
 
-title: "Tommaso Rosati"
 email: "t.rosati@warwick.ac.uk"
 url: "https://rosati-tom.github.io"
 #theme: minima
 
-markdown: kramdown
+#markdown: kramdown
