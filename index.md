@@ -27,7 +27,7 @@ first).
 
 **Teaching**
 
-* 2025/26 Brownian Motion (MA4F7/ST403), Stochastic PDEs (ST924), <br> and a reading group on the GMC.
+* 2025/26 Brownian Motion (MA4F7/ST403), Stochastic PDEs (ST924), <br> and a [reading group on the GMC](/gmc.md).
 * 2024/25 Brownian Motion (MA4F7/ST403).
 * 2023/24 Brownian Motion (MA4F7/ST403), and Stochastic PDEs (ST924).
 * 2022/23 Brownian Motion (MA4F7/ST403).
@@ -73,16 +73,9 @@ first).
 
 > **[1]** "The KPZ equation on the real line", with N. Perkowski. <br> *Electron. J. Probab. (2019).*
 
-**Outreach and other**
+**Outreach and lecture notes**
 
-
-* Some lecture notes for a mini-course of stochastic PDEs.
+* Some [lecture notes](/assets/spdes_24.pdf) for a mini-course of stochastic PDEs.
 * "Randomness is natural - an introduction to regularisation by noise", <br>with H. Elad-Altman and A. Djurdjevac. <br> *Snapshots of modern
   mathematics from Oberwolfach (2022).*
-* Old simulations on GitHub.
 
-
-**Theses**
-
-* PhD thesis: "Singular SPDEs and Fluctuations of Particle Systems", open access.
-* Master thesis: "The KPZ equation on the real line".
