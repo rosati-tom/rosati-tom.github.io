@@ -30,7 +30,7 @@ h1, h2, h3 { font-family: "Computer Modern Sans", sans-serif; }
 .intro-text {
   flex: 1 1 0;
   min-width: 220px;
-  max-width: 490px;
+  max-width: 730px;
 }
 
 /* Fix a reasonable photo column width */

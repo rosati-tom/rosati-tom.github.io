@@ -31,11 +31,11 @@ It takes place in B3.03, Tuesdays 15-16.
 
 > 7/10: Introduction and topic assignments.
 
-> 14/10: Haokai Xie - Construction of the GMC I: Link1 Link2.
+> 14/10: Haokai Xie - Construction of the GMC I.
 
-> 21/10: Chris Dean - Construction of the GMC II: Link2.
+> 21/10: Chris Dean - Construction of the GMC II.
 
-> 4/11: Chris Dean - Construction of the GMC III: Link2.
+> 4/11: Chris Dean - Construction of the GMC III.
 
 > 11/11: Gianmarco Del Pino - Moments of the GMC.
 
