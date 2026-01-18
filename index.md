@@ -5,7 +5,7 @@
 ## Tommaso Rosati 
 
 I am a Harrison fellow in the University of Warwick.<br>
-I am additionally supported by a Leverhulme Early Career Fellowship.
+I am supported by a Leverhulme Early Career Fellowship.
 
 I study topics in probability, stochastic analysis, stochastic PDEs.
 
@@ -19,7 +19,7 @@ I study topics in probability, stochastic analysis, stochastic PDEs.
   </div>
 
   <div class="intro-photo">
-    <img src="/assets/photo.jpg">
+    <img src="/assets/photo.jpg" class="profile-pic">
   </div>
 </div>
 
