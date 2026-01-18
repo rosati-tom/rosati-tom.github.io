@@ -7,11 +7,11 @@
 ## Tommaso Rosati 
 
 **I am a Harrison fellow in the stats department of the University of Warwick.**<br>
-**From September 2024 I am additionally supported by a Leverhulme Early Career Fellowship.**
+**I am additionally supported by a Leverhulme Early Career Fellowship.**
 
 I study topics in probability, stochastic analysis, partial differential equations, and large scale properties of stochastic PDEs.
 
-**Contact me:** [t.rosati@warwick.ac.uk](mailto:t.rosati@warwick.ac.uk)
+**Contact:** [t.rosati@warwick.ac.uk](mailto:t.rosati@warwick.ac.uk)
 
 **In person:** room 1.11 of the mathematical sciences building.
 
@@ -32,8 +32,9 @@ I study topics in probability, stochastic analysis, partial differential equatio
 
 **Published or accepted**
 
-> **[15]** "Lower bounds on the top Lyapunov exponent for linear PDEs driven by the 2D stochastic Navier-Stokes equations", in collaboration with M. Hairer, S. Punshon-Smith and J. Yi 
-> > Duke Math. J., under minor revision Arxiv.
+> **[15]** "Lower bounds on the top Lyapunov exponent for linear PDEs driven by
+> the 2D stochastic Navier-Stokes equations", in collaboration with M. Hairer,
+> S. Punshon-Smith and J. Yi. <br> Duke Math. J., under minor revision Arxiv.
 
 > **[14]** "Quantitative instability for stochastic scalar reaction-diffusion equations", in collaboration with A. Blessing (Neamtu), Ann. Appl. Probab. (2025), to appear, Arxiv.
 
