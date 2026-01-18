@@ -4,7 +4,7 @@
 <div class="intro">
   <div class="intro-text" markdown="1">
 
-I am a Harrison fellow in the University of Warwick, supported by a Leverhulme Early Career Fellowship.
+I am a Harrison fellow at the University of Warwick, supported by a Leverhulme Early Career Fellowship.
 
 I study topics in probability, stochastic analysis, stochastic PDEs.
 
