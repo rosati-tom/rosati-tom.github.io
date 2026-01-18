@@ -26,7 +26,6 @@ first).
 </div>
 
 <br>
-<br>
 
 **Teaching**
 
