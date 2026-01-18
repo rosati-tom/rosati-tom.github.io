@@ -19,6 +19,9 @@ I study topics in probability, stochastic analysis, partial differential equatio
 
 **Teaching**
 
+* 2025/26 Brownian Motion ()
+* 2024/25 Brownian Motion
+
 **Find my articles** on Arxiv or Scholar
 
 **Preprints**
