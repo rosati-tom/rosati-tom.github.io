@@ -7,3 +7,44 @@
   line-height: 1.55;
 }
 img { max-width: 260px; height: auto; display: block; margin: 16px 0; }
+
+
+
+/* Intro block: text left, photo right */
+.intro {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+/* Let the text take remaining width */
+.intro-text {
+  flex: 1 1 auto;
+  min-width: 280px;
+}
+
+/* Fix a reasonable photo column width */
+.intro-photo {
+  flex: 0 0 240px;
+}
+
+.profile-pic {
+  width: 240px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;   /* optional */
+}
+
+/* Mobile: stack */
+@media (max-width: 700px) {
+  .intro {
+    flex-direction: column;
+  }
+  .intro-photo {
+    flex: none;
+  }
+  .profile-pic {
+    width: 200px;
+  }
+}
