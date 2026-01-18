@@ -1,8 +1,8 @@
 
+## Tommaso Rosati 
+
 <div class="intro">
   <div class="intro-text" markdown="1">
-
-## Tommaso Rosati 
 
 I am a Harrison fellow in the University of Warwick.<br>
 I am supported by a Leverhulme Early Career Fellowship.
