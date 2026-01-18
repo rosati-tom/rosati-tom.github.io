@@ -1,5 +1,6 @@
 
-[[Home](/index.md)]
+[← Home](/)
+
 
 ## Reading group on the Gaussian Multiplicative Chaos 
 
