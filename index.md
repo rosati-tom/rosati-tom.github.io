@@ -68,8 +68,9 @@ I study topics in probability, stochastic analysis, stochastic PDEs.
 
 
 * Some lecture notes for a mini-course of stochastic PDEs.
-* "Randomness is natural - an introduction to regularisation by noise", in collaboration with H. Elad-Altman and A. Djurdjevac, snapshots of modern mathematics from Oberwolfach.
-* I helped revamp the Probability at Warwick website. Check it out here!
+* "Randomness is natural - an introduction to regularisation by noise", in
+  collaboration with H. Elad-Altman and A. Djurdjevac. <br> *Snapshots of modern
+  mathematics from Oberwolfach.*
 * Old simulations on GitHub.
 
 
