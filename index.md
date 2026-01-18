@@ -15,7 +15,7 @@ I study topics in probability, stochastic analysis, stochastic PDEs.
 **Office hours:** 17:00-18:00 Tuesday and 14:00-15:00 Thursday (write an email
 first).
 
-**[Curriculum vitae](/assets/cv.pdf).**
+[Curriculum vitae](/assets/cv.pdf).
 
 
   </div>

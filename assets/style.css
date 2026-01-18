@@ -29,7 +29,7 @@ h1, h2, h3 { font-family: 'CMUSerifRoman', serif; }
 /* Let the text take remaining width */
 .intro-text {
   flex: 1 1 0;
-  max-width: 210px;
+  max-width: 240px;
 }
 
 /* Fix a reasonable photo column width */
@@ -38,7 +38,7 @@ h1, h2, h3 { font-family: 'CMUSerifRoman', serif; }
 }
 
 .profile-pic {
-  width: 250px;
+  width: 240px;
   max-width: 100%;
   height: auto;
   display: block;
