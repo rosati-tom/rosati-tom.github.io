@@ -6,17 +6,17 @@
   /*font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;*/
   /*line-height: 1.55;*/
 /*}*/
+
 .container {
   max-width: 730px;
   margin: 38px auto;
   padding: 0 16px;
-  font-family: 'CMUSerifRoman', serif;
+  font-family: "Computer Modern Sans", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.55;
-  font-size: 18px;
 }
 img { max-width: 260px; height: auto; display: block; margin: 16px 0; }
 
-h1, h2, h3 { font-family: 'CMUSerifRoman', serif; }
+h1, h2, h3 { font-family: "Computer Modern Sans", sans-serif; }
 
 
 /* Intro block: text left, photo right */
@@ -29,7 +29,7 @@ h1, h2, h3 { font-family: 'CMUSerifRoman', serif; }
 /* Let the text take remaining width */
 .intro-text {
   flex: 1 1 0;
-  max-width: 260px;
+  max-width: 280px;
 }
 
 /* Fix a reasonable photo column width */
