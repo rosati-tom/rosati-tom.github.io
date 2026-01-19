@@ -1,5 +1,6 @@
 [← Home](/)
 
+----
 
 ##  Research
 
@@ -47,4 +48,7 @@
 * Some [lecture notes](/assets/spdes_24.pdf) for a mini-course of stochastic PDEs.
 * "Randomness is natural - an introduction to regularisation by noise", <br>with H. Elad-Altman and A. Djurdjevac. <br> *Snapshots of modern
   mathematics from Oberwolfach (2022).*
+
+----
+
 

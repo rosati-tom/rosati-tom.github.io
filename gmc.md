@@ -1,6 +1,7 @@
 
 [← Home](/)
 
+----
 
 ## Reading group on the Gaussian Multiplicative Chaos 
 
@@ -42,3 +43,7 @@ It takes place in B3.03, Tuesdays 15-16.
 > 25/11: Zuodi Xie - Maxima of the GMC I.
 
 > 2/12: Zuodi Xie - Maxima of the GMC II.
+
+----
+
+
