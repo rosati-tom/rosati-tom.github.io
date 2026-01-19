@@ -16,6 +16,10 @@ I study probability, stochastic analysis, stochastic PDEs.
 
 **Office hours:** 17-18 Tuesday and 14-15 Thursday (write first).
 
+
+**Find me** on [Arxiv](https://arxiv.org/search/?searchtype=author&query=Rosati%2C+T),  [Scholar](https://scholar.google.com/citations?user=Xdj6H3gAAAAJ&hl=en), or through my [ORCID](https://orcid.org/0000-0001-5255-6519).
+
+
 [Curriculum vitae](/assets/cv.pdf).
 
 
@@ -34,8 +38,6 @@ I study probability, stochastic analysis, stochastic PDEs.
 * 2024/25 Brownian Motion (MA4F7/ST403).
 * 2023/24 Brownian Motion (MA4F7/ST403), and Stochastic PDEs (ST924).
 * 2022/23 Brownian Motion (MA4F7/ST403).
-
-**Find my articles** on [Arxiv](https://arxiv.org/search/?searchtype=author&query=Rosati%2C+T),  [Scholar](https://scholar.google.com/citations?user=Xdj6H3gAAAAJ&hl=en), or through my [ORCID](https://orcid.org/0000-0001-5255-6519).
 
 **Preprints**
 
