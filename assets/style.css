@@ -9,7 +9,8 @@
 
 .container {
   max-width: 730px;
-  margin: 38px auto;
+  margin: 60px auto 38px;   /* more space on top */
+  /*margin: 38px auto;*/
   padding: 0 16px;
   font-family: Georgia, "Times New Roman", Times, serif;
   line-height: 1.55;
