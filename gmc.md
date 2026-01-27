@@ -15,17 +15,17 @@ It takes place in B3.03, Tuesdays 15-16.
 
 > 27/1: T. Galanis - Introduction to Liouville Quantum Gravity.
 
-> 3/2
+> 3/2: H. Xie - GFF on a manifold.
 
-> 10/2
+> 10/2: G. Del Pino - GMC on a manifold.
 
-> 24/2
+> 24/2: L. Graefner 
 
-> 3/3
+> 3/3: Z. Xie
 
-> 10/3
+> 10/3: Z. Liu
 
-> 17/3
+> 17/3: T. Galanis
 
 **Term 1:**
 
