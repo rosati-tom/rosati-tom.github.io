@@ -88,8 +88,9 @@ I study probability, stochastic analysis, SPDEs.
 
 **Positions**
 
-* 2022–present: Harrison Early Career Assistant Professor, University of Warwick. <br> Supported by a Leverhulme Early Career Fellowship.
-* 2020–2022: Research associate (postdoc), Imperial College London (group of Martin Hairer).
+* 2022–present: Harrison Early Career Assistant Professor, University of
+  Warwick. <br> Supported by a Leverhulme Early Career Fellowship (2024-27).
+* 2020–2022: Research associate, Imperial College London.
 
 **Education**
 
