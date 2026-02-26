@@ -88,15 +88,15 @@ I study probability, stochastic analysis, SPDEs.
 
 **Positions**
 
-* 2022–present: Harrison Early Career Assistant Professor, University of
+* 2022–present Harrison Early Career Assistant Professor, University of
   Warwick. <br> Supported by a Leverhulme Early Career Fellowship (2024-27).
-* 2020–2022: Research associate, Imperial College London.
+* 2020–2022 Research associate, Imperial College London.
 
 **Education**
 
-* 2017–2020: PhD, Freie Universität Berlin.
-* 2015–2017: MSc, Humboldt Universität zu Berlin.
-* 2012–2015: BSc, Università di Roma Tor Vergata.
+* 2017–2020 PhD, Freie Universität Berlin.
+* 2015–2017 MSc, Humboldt Universität zu Berlin.
+* 2012–2015 BSc, Università di Roma Tor Vergata.
 
 [Full CV](/assets/cv.pdf)
 
