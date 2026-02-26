@@ -36,7 +36,9 @@ I study probability, stochastic analysis, SPDEs.
 
 **Published or accepted**
 
-> **[15]** "[Lower bounds on the top Lyapunov exponent for linear PDEs driven by the 2D stochastic Navier-Stokes equations](https://arxiv.org/abs/2411.10419)", with M. Hairer, S. Punshon-Smith and J. Yi. <br> *Duke Math. J., under minor revision.*
+> **[15]** "[Lower bounds on the top Lyapunov exponent for linear PDEs driven by
+> the 2D stochastic Navier-Stokes equations](https://arxiv.org/abs/2411.10419)",
+> with M. Hairer, S. Punshon-Smith and J. Yi. <br> *Duke Math. J., to appear.*
 
 > **[14]** "[Quantitative instability for stochastic scalar reaction-diffusion equations](https://arxiv.org/abs/2406.04651)",<br> with A. Blessing. <br> *Ann. Appl. Probab. (2025), to appear.*
 
