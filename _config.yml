@@ -2,6 +2,6 @@
 title: "Tommaso Rosati"
 description: "Tommaso Rosati — mathematician at the University of Warwick working on probability, stochastic analysis, and SPDEs."
 
-plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
+#plugins:
+  #- jekyll-seo-tag
+  #- jekyll-sitemap
