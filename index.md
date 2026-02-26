@@ -94,9 +94,9 @@ I study probability, stochastic analysis, SPDEs.
 
 **Education**
 
-* 2017–2020: PhD in mathematics, Freie Universität Berlin.
-* 2015–2017: Master in mathematics, Humboldt Universität zu Berlin.
-* 2012–2015: Bachelor in mathematics, Università di Roma Tor Vergata.
+* 2017–2020: PhD, Freie Universität Berlin.
+* 2015–2017: MSc, Humboldt Universität zu Berlin.
+* 2012–2015: BSc, Università di Roma Tor Vergata.
 
 [Full CV](/assets/cv.pdf)
 
