@@ -60,10 +60,7 @@ h1, h2, h3, h4 {
     flex-direction: column;
   }
   .intro-photo {
-    flex: none;
-  }
-  .profile-pic {
-    width: 200px;
+    display: none;
   }
 }
 
