@@ -32,6 +32,9 @@ I study probability, stochastic analysis, SPDEs.
 
 **Preprints**
 
+> [17] "[Fluctuations in the weakly coupled 4D Anderson
+> Hamiltonian](https://arxiv.org/abs/2602.22509)", <br> with S. Gabriel.
+
 > [16] "[Invariant measures for the open KPZ equation: an analytic perspective](https://arxiv.org/abs/2512.03328)", <br> with A. Dunlap and Y. Gu.
 
 **Published or accepted**
