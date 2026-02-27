@@ -30,7 +30,7 @@ h1, h2, h3, h4 {
 /* Intro block: text left, photo right */
 .intro {
   display: flex;
-  gap: 32px;
+  gap: 64px;
   align-items: flex-start;
 }
 
