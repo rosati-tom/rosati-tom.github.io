@@ -73,3 +73,32 @@ h1, h2, h3, h4 {
     display: none;
   }
 }
+
+/* Refined link color — muted academic blue instead of browser default */
+a {
+  color: #4a6fa5;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Strip default blockquote styling (used heavily for paper entries) */
+blockquote {
+  margin: 0.3em 0;
+  padding: 0;
+  border: none;
+}
+
+/* Lighter, more elegant section dividers */
+hr {
+  border: none;
+  border-top: 1px solid #d8cfc4;
+  margin: 2em 0;
+}
+
+/* Slightly refined section headings */
+h2 {
+  letter-spacing: 0.04em;
+  font-weight: normal;
+}
