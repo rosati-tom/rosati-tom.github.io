@@ -6,7 +6,7 @@
 <div class="intro">
   <div class="intro-text" markdown="1">
 
-I am a Harrison fellow at the University of Warwick, additionally supported by a Leverhulme Early Career Fellowship.
+I am a Harrison fellow at the University of Warwick, <br> supported by a Leverhulme Early Career Fellowship.
 
 I study probability, stochastic analysis, SPDEs.
 
