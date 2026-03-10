@@ -21,7 +21,7 @@ It takes place in B3.03, Tuesdays 15-16.
 
 > 3/3: L. Graefner - Change of variables and related topics.
 
-> 10/3: Z. Xie
+> 10/3: Z. Xie - The Weyl anomaly
 
 > 17/3: Z. Liu
 
