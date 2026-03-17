@@ -23,7 +23,7 @@ It takes place in B3.03, Tuesdays 15-16.
 
 > 10/3: Z. Xie - The Weyl anomaly
 
-> 17/3: Z. Liu
+> 17/3: Z. Liu - The Weyl anomaly
 
 **Term 1:**
 
