@@ -81,10 +81,11 @@ SPDEs.
 
 ## Teaching
 
-* 2025/26 Brownian Motion (MA4F7/ST403), Stochastic PDEs (ST924), <br> and a [reading group](/gmc.md/) on the GMC.
-* 2024/25 Brownian Motion (MA4F7/ST403).
-* 2023/24 Brownian Motion (MA4F7/ST403), and Stochastic PDEs (ST924).
-* 2022/23 Brownian Motion (MA4F7/ST403).
+* <span class="yr">2025/26</span>Brownian Motion (MA4F7/ST403), Stochastic PDEs (ST924), <br> and a [reading group](/gmc.md/) on the GMC.
+* <span class="yr">2024/25</span>Brownian Motion (MA4F7/ST403).
+* <span class="yr">2023/24</span>Brownian Motion (MA4F7/ST403), and Stochastic PDEs (ST924).
+* <span class="yr">2022/23</span>Brownian Motion (MA4F7/ST403).
+{: .cv-list}
 
 ----
 
@@ -100,9 +101,10 @@ SPDEs.
 
 **Education**
 
-* 2017–2020 PhD, Freie Universität Berlin.
-* 2015–2017 MSc, Humboldt Universität zu Berlin.
-* 2012–2015 BSc, Università di Roma Tor Vergata.
+* <span class="yr">2017–2020</span>PhD, Freie Universität Berlin.
+* <span class="yr">2015–2017</span>MSc, Humboldt Universität zu Berlin.
+* <span class="yr">2012–2015</span>BSc, Università di Roma Tor Vergata.
+{: .cv-list}
 
 [Full CV](/assets/cv.pdf)
 
