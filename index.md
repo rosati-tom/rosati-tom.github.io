@@ -6,13 +6,12 @@
 <div class="intro">
   <div class="intro-text" markdown="1">
 
-I am a Harrison fellow at the University of Warwick, supported by a
-Leverhulme Early Career Fellowship. 
+I am an Assistant Professor at Imperial College London.
 
 I study probability, stochastic analysis,
 SPDEs.
 
-**Contact:** [t.rosati@warwick.ac.uk](mailto:t.rosati@warwick.ac.uk).
+**Contact:** [t.rosati@ic.ac.uk](mailto:t.rosati@ic.ac.uk).
 
 **Office:** room 1.11, MSB.
 
@@ -45,7 +44,7 @@ SPDEs.
 > the 2D stochastic Navier-Stokes equations](https://arxiv.org/abs/2411.10419)",
 > with M. Hairer, S. Punshon-Smith and J. Yi. <br> *Duke Math. J. (2026), to appear.*
 
-> [14] "[Quantitative instability for stochastic scalar reaction-diffusion equations](https://arxiv.org/abs/2406.04651)",<br> with A. Blessing. <br> *Ann. Appl. Probab. (2025), to appear.*
+> [14] "[Quantitative instability for stochastic scalar reaction-diffusion equations](https://arxiv.org/abs/2406.04651)",<br> with A. Blessing. <br> *Ann. Appl. Probab. (2026).*
 
 > [13] "[Spectral gap for projective processes of linear SPDEs](https://arxiv.org/abs/2307.07472)", with M. Hairer. <br> *Comm. Amer. Math. Soc. (2025).*
 
@@ -93,7 +92,8 @@ SPDEs.
 
 **Positions**
 
-* 2022–present Harrison Early Career Assistant Professor, University of
+* 2026–present Assistant Professor, Imperial College London.
+* 2022–2026 Harrison Early Career Assistant Professor, University of
   Warwick. <br> Supported by a Leverhulme Early Career Fellowship (2024-27).
 * 2020–2022 Research associate, Imperial College London.
 
