@@ -92,10 +92,11 @@ SPDEs.
 
 **Positions**
 
-* 2026–present Assistant Professor, Imperial College London.
-* 2022–2026 Harrison Early Career Assistant Professor, University of
-  Warwick. <br> Supported by a Leverhulme Early Career Fellowship (2024-27).
-* 2020–2022 Research associate, Imperial College London.
+* <span class="yr">2026–present</span>Assistant Professor, Imperial College London.
+* <span class="yr">2022–2026</span>Harrison Early Career Assistant Professor,
+  University of Warwick. <br> Supported by a Leverhulme Early Career Fellowship (2024-27).
+* <span class="yr">2020–2022</span>Research associate, Imperial College London.
+{: .cv-list}
 
 **Education**
 

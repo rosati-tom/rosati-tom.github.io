@@ -99,3 +99,7 @@ h2 {
   letter-spacing: 0.04em;
   font-weight: normal;
 }
+
+/* CV lists: dates in a fixed-width column, text aligned beside them */
+.cv-list li { padding-left: 7.5em; margin: 0.35em 0; }
+.cv-list .yr { display: inline-block; width: 7.5em; margin-left: -7.5em; }
