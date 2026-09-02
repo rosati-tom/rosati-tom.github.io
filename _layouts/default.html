@@ -1,14 +1,38 @@
 
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{{ site.title }}</title>
     <!--<base target="_blank">-->
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/cmu-serif" type="text/css">
     <link rel="stylesheet" href="/assets/style.css" />
     {% seo %}
+{% if page.url == "/" %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Tommaso Rosati",
+      "givenName": "Tommaso",
+      "familyName": "Rosati",
+      "url": "{{ site.url }}/",
+      "image": "{{ site.url }}/assets/tommaso-rosati.jpg",
+      "jobTitle": "Assistant Professor",
+      "worksFor": {
+        "@type": "CollegeOrUniversity",
+        "name": "Imperial College London",
+        "url": "https://www.imperial.ac.uk/"
+      },
+      "knowsAbout": ["Probability", "Stochastic analysis", "Stochastic partial differential equations"],
+      "sameAs": [
+        "https://arxiv.org/a/rosati_t_1",
+        "https://scholar.google.com/citations?user=Xdj6H3gAAAAJ&hl=en",
+        "https://orcid.org/0000-0001-5255-6519"
+      ]
+    }
+    </script>
+{% endif %}
     <meta name="google-site-verification" content="t18ZiWzrlvIZrBMEBlniqtfBF7zu2k6yFGHMO_BWrOU" />
   </head>
   <body>
