@@ -7,7 +7,12 @@
     <!--<base target="_blank">-->
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/cmu-serif" type="text/css">
     <link rel="stylesheet" href="/assets/style.css" />
-    {% seo %}
+    <!-- Title is set here, not by jekyll-seo-tag: because index.md's title equals
+         site.title, the plugin would append site.tagline (or, absent that, the far
+         longer site.description) after a " | ". title=false suppresses only its
+         <title>; og:title, description and the rest of the SEO tags are untouched. -->
+    <title>{{ page.title | default: site.title }}</title>
+    {% seo title=false %}
 {% if page.url == "/" %}
     <script type="application/ld+json">
     {

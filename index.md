@@ -19,7 +19,7 @@ SPDEs.
 
 **Contact:** [t.rosati@ic.ac.uk](mailto:t.rosati@ic.ac.uk).
 
-**Office:** room 6m47, MSB.
+**Office:** room 6m47, Huxley building.
 
 
 **Find me** on [Arxiv](https://arxiv.org/search/?searchtype=author&query=Rosati%2C+T),  [Scholar](https://scholar.google.com/citations?user=Xdj6H3gAAAAJ&hl=en), or [ORCID](https://orcid.org/0000-0001-5255-6519).
