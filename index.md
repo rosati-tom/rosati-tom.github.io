@@ -21,8 +21,6 @@ SPDEs.
 
 **Office:** room 1.11, MSB.
 
-**Office hours:** 17-18 Tue, 14-15 Thu (write first).
-
 
 **Find me** on [Arxiv](https://arxiv.org/search/?searchtype=author&query=Rosati%2C+T),  [Scholar](https://scholar.google.com/citations?user=Xdj6H3gAAAAJ&hl=en), or [ORCID](https://orcid.org/0000-0001-5255-6519).
 
@@ -41,6 +39,9 @@ SPDEs.
 ## Research
 
 **Preprints**
+
+> [18] "[Unique ergodicity of projective cocycles over the 2D stochastic
+> Navier-Stokes equations](https://arxiv.org/abs/2609.01697)", <br> with S. Punshon-Smith.
 
 > [17] "[Fluctuations in the weakly coupled 4D Anderson
 > Hamiltonian](https://arxiv.org/abs/2602.22509)", <br> with S. Gabriel.
