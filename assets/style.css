@@ -39,6 +39,7 @@ h1, h2, h3, h4 {
   flex: 1 1 0;
   min-width: 220px;
   max-width: 730px;
+  padding-top: 14px;   /* nudge text down to align with the photo */
 }
 
 /* Fix a reasonable photo column width */
@@ -60,6 +61,9 @@ h1, h2, h3, h4 {
   .intro {
     flex-direction: column;
     gap: 24px;
+  }
+  .intro-text {
+    padding-top: 0;
   }
   .intro-photo {
     flex: 0 0 auto;
