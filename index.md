@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Tommaso Rosati
-description: "Tommaso Rosati is an Assistant Professor of Mathematics at Imperial College London, working on probability, stochastic analysis and SPDEs."
 image: /assets/tommaso-rosati.jpg
 ---
 
@@ -29,7 +28,7 @@ SPDEs.
   <div class="intro-photo">
     <img src="/assets/tommaso-rosati.jpg" class="profile-pic"
          width="939" height="1118"
-         alt="Tommaso Rosati, Assistant Professor of Mathematics at Imperial College London"
+         alt="Tommaso Rosati"
          title="Tommaso Rosati">
   </div>
 </div>
