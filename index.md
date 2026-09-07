@@ -59,7 +59,7 @@ SPDEs.
 
 > [12] "[The Allen-Cahn equation with weakly critical random initial datum](https://arxiv.org/abs/2311.04628)",<br> with S. Gabriel and N. Zygouras. <br> *Probab. Theory Related Fields (2024).*
 
-> [11] "[Synchronisation for scalar conservation laws via Dirichlet boundary](https://arxiv.org/abs/2211.05814)",<br> with A. Djurdjevac.<br> *Bernoulli (2024).*
+> [11] "[Synchronisation for scalar conservation laws via Dirichlet boundary](https://arxiv.org/abs/2211.05814)",<br> with A. Djurdjevac.<br> *Bernoulli (2025).*
 
 > [10] "[Global existence for perturbations of the 2D stochastic Navier-Stokes equations with space-time white noise](https://arxiv.org/abs/2301.11059)", with M. Hairer. <br> *Ann. PDE (2024).*
 
