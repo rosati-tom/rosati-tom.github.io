@@ -3,11 +3,11 @@
 
 ----
 
-## Reading group on the Renormalisation Group
+## Reading group on Renormalisation Group
 
 A reading group on rigorous renormalisation group methods.
 
-**Main reference:** R. Bauerschmidt, D. Brydges and G. Slade, [arXiv:1907.05474](https://arxiv.org/abs/1907.05474).
+**Literature:** R. Bauerschmidt, D. Brydges and G. Slade, [arXiv:1907.05474](https://arxiv.org/abs/1907.05474).
 
 **Term 1:**
 
