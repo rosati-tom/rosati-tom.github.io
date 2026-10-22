@@ -23,7 +23,7 @@ SPDEs.
 
 **Find me** on [Arxiv](https://arxiv.org/search/?searchtype=author&query=Rosati%2C+T),  [Scholar](https://scholar.google.com/citations?user=Xdj6H3gAAAAJ&hl=en), or [ORCID](https://orcid.org/0000-0001-5255-6519).
 
-[research](#research)&nbsp;&nbsp; [teaching](#teaching)&nbsp;&nbsp; [reading](/gmc.md) &nbsp;&nbsp; [cv](#cv)
+[research](#research)&nbsp;&nbsp; [teaching](#teaching)&nbsp;&nbsp; [reading](/rg.html) &nbsp;&nbsp; [cv](#cv)
   </div>
   <div class="intro-photo">
     <img src="/assets/tommaso-rosati.jpg" class="profile-pic"
@@ -90,7 +90,8 @@ SPDEs.
 
 ## Teaching
 
-* <span class="yr">2025/26</span>Brownian Motion (MA4F7/ST403), Stochastic PDEs (ST924), <br> and a [reading group](/gmc.md/) on the GMC.
+* <span class="yr">2026/27</span>A [reading group](/rg.html) on the renormalisation group.
+* <span class="yr">2025/26</span>Brownian Motion (MA4F7/ST403), Stochastic PDEs (ST924), <br> and a [reading group](/gmc.html) on the GMC.
 * <span class="yr">2024/25</span>Brownian Motion (MA4F7/ST403).
 * <span class="yr">2023/24</span>Brownian Motion (MA4F7/ST403), and Stochastic PDEs (ST924).
 * <span class="yr">2022/23</span>Brownian Motion (MA4F7/ST403).
