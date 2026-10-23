@@ -13,17 +13,17 @@ It takes place on Fridays 10-12.
 
 **Term 1:**
 
-> 6/11 (Huxley 6M42): Introduction and topic assignments.
+> 6/11 (6M42): Introduction and topic assignments.
 
-> 13/11 (Huxley 6M42): TBA.
+> 13/11 (6M42): TBA.
 
-> 20/11 (Huxley 408): TBA.
+> 20/11 (408): TBA.
 
-> 27/11 (Huxley 408): TBA.
+> 27/11 (408): TBA.
 
-> 4/12 (Huxley 408): TBA.
+> 4/12 (408): TBA.
 
-> 18/12 (Huxley 408): TBA.
+> 18/12 (408): TBA.
 
 ----
 
