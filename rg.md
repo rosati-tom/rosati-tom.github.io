@@ -7,21 +7,23 @@
 
 A reading group on rigorous renormalisation group methods.
 
+It takes place on Fridays 10-12, in the Huxley building.
+
 **Literature:** R. Bauerschmidt, D. Brydges and G. Slade, [arXiv:1907.05474](https://arxiv.org/abs/1907.05474).
 
 **Term 1:**
 
-> 6/11: Introduction and topic assignments.
+> 6/11 (Huxley 6M42): Introduction and topic assignments.
 
-> 13/11: TBA.
+> 13/11 (Huxley 6M42): TBA.
 
-> 20/11: TBA.
+> 20/11 (Huxley 408): TBA.
 
-> 27/11: TBA.
+> 27/11 (Huxley 408): TBA.
 
-> 4/12: TBA.
+> 4/12 (Huxley 408): TBA.
 
-> 11/12: TBA.
+> 18/12 (Huxley 408): TBA.
 
 ----
 
