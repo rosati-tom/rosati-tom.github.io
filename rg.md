@@ -7,7 +7,7 @@
 
 A reading group on rigorous renormalisation group methods.
 
-It takes place on Fridays 10-12, in the Huxley building.
+It takes place on Fridays 10-12.
 
 **Literature:** R. Bauerschmidt, D. Brydges and G. Slade, [arXiv:1907.05474](https://arxiv.org/abs/1907.05474).
 
