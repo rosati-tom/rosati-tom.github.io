@@ -5,6 +5,8 @@
 
 ## Reading group on Renormalisation Group
 
+*Organisers:* Benoit Dagallier, Tommaso Rosati.
+
 A reading group on rigorous renormalisation group methods.
 
 It takes place on Fridays 10-12.
@@ -24,8 +26,3 @@ It takes place on Fridays 10-12.
 > 4/12 (408): TBA.
 
 > 18/12 (408): TBA.
-
-----
-
-*Past reading groups:* [Gaussian Multiplicative Chaos](/gmc.html) (2025/26).
-
