@@ -1,0 +1,938 @@
+---
+title: "A shrinking-annulus bound for planar Bargmann–Fock curve shortening"
+date: 2026-10-28
+status: "unchecked"
+---
+{% raw %}
+<div class="tex-macros" hidden>\(
+\newcommand{\R}{\mathbb R}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\E}{\mathbb E}
+\newcommand{\PP}{\mathbb P}
+\newcommand{\HH}{\mathcal H}
+\newcommand{\dd}{\,\mathrm d}
+\newcommand{\ind}{\mathbf 1}
+\newcommand{\diam}{\operatorname{diam}}
+\newcommand{\dist}{\operatorname{dist}}
+\newcommand{\supp}{\operatorname{supp}}
+\newcommand{\vol}{\operatorname{vol}}
+\newcommand{\cl}{\operatorname{cl}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\cross}{\operatorname{Cross}}
+\newcommand{\eps}{\varepsilon}
+\)</div>
+
+<div class="abstract">
+
+<p><strong>Abstract.</strong> 
+We give a proposed proof of an upper bound, within a logarithmic factor of
+the diffusive rate, for the expected length density of planar
+Bargmann–Fock nodal curves evolved by curve shortening. The argument has
+two parts: a local length–curvature inequality combined with monotonicity
+of crossings between shrinking circles, and a bound on the expected
+number of initial nodal crossings using finite-range approximation,
+planar separation, and the product-space BKR inequality.
+The proof uses no exact percolation exponent. This is a research draft
+of an argument developed here, not an attribution of the conclusion to an
+existing publication. Classical inputs are explicitly identified.</p>
+
+</div>
+
+<h3>1. Statement, normalization, and conventions</h3>
+
+<p>Let \(f\) be the centered stationary planar Bargmann–Fock field normalized by
+<a id="eq-cov"></a>\[\E[f(x)f(y)]=\exp(-|x-y|^2/2). \tag{1.1}\]
+Almost surely its zero set is a locally finite union of disjoint smooth
+embedded compact curves. Evolve every such curve by
+<a id="eq-csf"></a>\[\partial_t X=\partial_s^2X=\kappa n , \tag{1.2}\]
+where \(s\) denotes arclength at the current time. Delete a curve at its
+extinction time. Write \(\Gamma_t\) for the union of the remaining curves,
+\(\mu_t=\HH^1\!\restriction\Gamma_t\), and
+\[
+ Q=[0,1)^2,\qquad a(t)=\E\mu_t(Q).
+\]
+Thus the inverse-density coarsening scale is \(L(t)=1/a(t)\).
+All constants below may depend on the fixed normalization (<a href="#eq-cov">1.1</a>),
+and constants for a rectangle or annulus may depend on its fixed shape.</p>
+
+<div class="thm thm-plain" id="thm-main">
+
+<p><strong>Theorem 1.1</strong> (Claim proved in this draft). 
+There are constants \(c,C&gt;0\) and \(t_0&gt;e^e\) such that
+<a id="eq-main"></a>\[\frac{c}{\sqrt t}\le a(t)
+ \le \frac{C\log t}{\sqrt{t\,\log\log t}},
+ \qquad t\ge t_0. \tag{1.3}\]
+Consequently
+\[
+ c\,\frac{\sqrt{t\,\log\log t}}{\log t}
+ \le L(t)\le C\sqrt t
+\]
+after changing the constants.</p>
+
+</div>
+
+<p>The two main steps of the proof are the local reduction in
+Proposition&nbsp;<a href="#prop-reduction">3.3</a> and the crossing-multiplicity estimate in
+Theorem&nbsp;<a href="#thm-rect">4.1</a>. The latter is deduced from published ingredients;
+it is not assumed as an additional percolation hypothesis.
+The distinction between the asserted logarithmic bound and the still
+unproved sharp bound is discussed in Section&nbsp;<a href="#sec-scope">6</a>.</p>
+
+<p>We use the following classical facts.
+The regularity and boundedness of the nodal components follow from
+Bulinskaya nondegeneracy and the absence of unbounded critical components
+in [<a href="#bib-BG">3</a>, Corollary 1.5]; see also
+[<a href="#bib-HLR">7</a>, Lemma 5.8 and Corollary 5.7] for the loopwise interpretation of
+the planar flow.
+A smooth embedded plane curve has a unique classical curve-shortening
+flow until it shrinks to a point; embeddedness, avoidance, and convex-hull
+containment are preserved [<a href="#bib-GH">5</a>, <a href="#bib-Grayson">6</a>]. For its length \(\ell_\gamma\),
+filled enclosed area \(A_\gamma\), and extinction time \(T_\gamma\),
+<a id="eq-classical"></a>\[\ell_\gamma'(t)=-\int_{\gamma_t}\kappa^2\dd s,\qquad
+ A_\gamma(t)=A_\gamma(0)-2\pi t,\qquad
+ T_\gamma=\frac{A_\gamma(0)}{2\pi}, \tag{1.4}\]
+and \(\ell_\gamma(t)\to0\) at extinction.
+The filled area here includes any regions enclosed by other nested loops.</p>
+
+<h3>2. The stationary flow and its energy identity</h3>
+
+<div class="thm thm-plain" id="lem-localfinite">
+
+<p><strong>Lemma 2.1</strong> (Local finiteness). 
+Almost surely, for every compact spatial set and every finite time
+interval, only finitely many initial nodal components have descendants
+meeting that set during the interval.</p>
+
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> 
+A regular zero set has only finitely many global connected components
+meeting a given compact set: cover its intersection with the compact
+set by finitely many implicit-function neighborhoods, each with a
+connected local zero set. Every component meeting the compact set
+contains one of these local pieces.</p>
+
+<p>Fix \(r,T&lt;\infty\), and choose \(R&gt;\sqrt{r^2+2T}\).
+If an initial loop does not meet the closed disk \(\overline B_R\), it
+lies outside the circle \(\partial B_R\). Avoidance with the shrinking
+circle of radius \(\sqrt{R^2-2u}\), \(0\le u\le T\), keeps that loop outside
+this circle for as long as it exists. This circle still contains \(B_r\)
+throughout the interval. Thus only the finitely many initial loops
+meeting \(\overline B_R\) can have descendants entering \(B_r\) before \(T\).
+<span class="qed">∎</span></p>
+
+</div>
+
+<p>The construction is independent of the enumeration of the initial loops.
+Uniqueness and Euclidean covariance of classical curve shortening imply
+that its law is stationary and isotropic. The random measures used below
+are measurable: one may enumerate the initial components using countably
+many local charts, use continuous dependence of the classical flow on
+smooth initial curves before extinction, and then use
+Lemma&nbsp;<a href="#lem-localfinite">2.1</a>. Extinction is handled by setting the component
+measure equal to zero. No translation-equivariant choice of a distinguished
+point on a loop is needed.</p>
+
+<div class="thm thm-plain" id="lem-transport">
+
+<p><strong>Lemma 2.2</strong> (Stationary mass transport). 
+If a nonnegative random measure \(M\) on \(\R^2\times\R^2\) is stationary
+under simultaneous translations of its two coordinates, then
+<a id="eq-balance"></a>\[\E M(Q\times\R^2)=\E M(\R^2\times Q), \tag{2.1}\]
+with equality also allowed to take the value \(+\infty\).</p>
+
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> 
+Partition \(\R^2\) into the half-open squares \(Q+z\), \(z\in\Z^2\).
+Stationarity and Tonelli's theorem give
+\[
+ \E M(\R^2\times Q)
+ =\sum_{z\in\Z^2}\E M((Q+z)\times Q)
+ =\sum_{z\in\Z^2}\E M(Q\times(Q-z))
+ =\E M(Q\times\R^2).
+\]
+<span class="qed">∎</span></p>
+
+</div>
+
+<p>Let \(\mu_{\gamma,t}\) denote the arclength measure on a single descendant
+and put \(\ell_\gamma(t)=\mu_{\gamma,t}(\R^2)\), with both zero after
+extinction. Define
+<a id="eq-Mt"></a>\[M_t(\dd x,\dd y)=
+ \sum_\gamma
+ \frac{\mu_{\gamma,0}(\dd x)\mu_{\gamma,t}(\dd y)}
+      {\ell_\gamma(0)} . \tag{2.2}\]
+Its incoming marginal is \(\mu_t\), whereas its outgoing marginal is
+\(\sum_\gamma(\ell_\gamma(t)/\ell_\gamma(0))\mu_{\gamma,0}\).
+Since length decreases, (<a href="#eq-balance">2.1</a>) yields
+<a id="eq-retention"></a>\[a(t)=\E\sum_\gamma
+ \frac{\ell_\gamma(t)}{\ell_\gamma(0)}\mu_{\gamma,0}(Q)
+ \le a(0)=\frac12 . \tag{2.3}\]
+The last value follows directly from the one-point Kac–Rice formula:
+\(f(x)\) is independent of \(\nabla f(x)\), the latter has law \(N(0,I_2)\),
+and \((2\pi)^{-1/2}\E|N(0,I_2)|=1/2\).</p>
+
+<p>Define the curvature measure and its intensity by
+\[
+ \nu_t(B)=\int_{\Gamma_t\cap B}\kappa^2\dd s,\qquad D(t)=\E\nu_t(Q).
+\]</p>
+
+<div class="thm thm-plain" id="lem-energy">
+
+<p><strong>Lemma 2.3</strong> (Integrated dissipation). 
+For \(0\le u&lt;v&lt;\infty\),
+<a id="eq-energy"></a>\[a(u)-a(v)=\int_u^v D(w)\dd w. \tag{2.4}\]
+In particular \(a\) is locally absolutely continuous, \(D(t)&lt;\infty\)
+for almost every \(t\), and \(a'(t)=-D(t)\) almost everywhere.</p>
+
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> 
+For each initial loop the first identity in (<a href="#eq-classical">1.4</a>), including
+extinction by continuity of length, gives
+\[
+ \ell_\gamma(u)-\ell_\gamma(v)
+ =\int_u^v \nu_{\gamma,w}(\R^2)\dd w .
+\]
+Subtract the two finite expressions in (<a href="#eq-retention">2.3</a>). All resulting
+terms are nonnegative, so Tonelli applies. For each \(w\), apply
+Lemma&nbsp;<a href="#lem-transport">2.2</a> to
+\[
+ \sum_\gamma
+ \frac{\mu_{\gamma,0}(\dd x)\nu_{\gamma,w}(\dd y)}
+      {\ell_\gamma(0)} .
+\]
+Its incoming intensity is \(D(w)\); its outgoing intensity is exactly
+the summand obtained after Tonelli. This proves (<a href="#eq-energy">2.4</a>),
+without differentiating a spatially localized flow integral.
+<span class="qed">∎</span></p>
+
+</div>
+
+<p>For every bounded Borel set \(B\), stationarity therefore gives
+<a id="eq-intensities"></a>\[\E\mu_t(B)=a(t)|B|,\qquad
+ \E\nu_t(B)=D(t)|B|, \tag{2.5}\]
+where the second identity is valid as an extended nonnegative identity
+and will be used at the almost-everywhere times for which \(D(t)&lt;\infty\).</p>
+
+<h3>3. A local reduction using two shrinking circles</h3>
+
+<p>For \(0&lt;r_1&lt;r_2\), a <em>through-arc</em> of a smooth curve in the annulus
+\(B_{r_2}\setminus\overline B_{r_1}\) is the closure of a connected
+component of its intersection with the open annulus whose two endpoints
+belong to different boundary circles. When both circles are transverse
+to the curve, these are compact proper arcs.
+Let \(N_t(r_1,r_2)\) count all such arcs of \(\Gamma_t\).
+At transverse radii, different through-arcs are disjoint even at their
+endpoints: at a transverse boundary intersection only one of the two
+adjacent curve segments lies in the annulus.</p>
+
+<div class="thm thm-plain" id="lem-sturm">
+
+<p><strong>Lemma 3.1</strong> (Shrinking-annulus monotonicity). 
+Fix \(t&gt;0\) and \(r&gt;0\). For almost every realization,
+<a id="eq-annmono"></a>\[N_t(r,2r)\le
+ N_0\!\left(\sqrt{r^2+2t},\sqrt{4r^2+2t}\right). \tag{3.1}\]</p>
+
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> 
+First work with one deterministic evolving loop and transverse initial
+and terminal circles. For \(0\le u\le t\) use comparison radii
+\[
+ r_I(u)=\sqrt{r^2+2(t-u)},\qquad
+ r_O(u)=\sqrt{4r^2+2(t-u)} .
+\]
+In a normal material parametrization define
+\(F(\theta,u)=|X(\theta,u)|^2+2u\). Since \(|\partial_sX|=1\),
+\[
+ \partial_u F=2X\cdot\partial_s^2X+2
+             =\partial_s^2F .
+\]
+Thus the two comparison-circle intersections are the zeros of two
+scalar parabolic solutions \(F-b_I\) and \(F-b_O\), with fixed levels
+\[
+ b_I=r^2+2t,\qquad b_O=4r^2+2t.
+\]
+On every compact pre-extinction interval the equation is uniformly
+parabolic on the parameter circle.</p>
+
+<p>At a regular time record the intersection labels \(I,O\) in cyclic
+parameter order. Adjacent unequal labels correspond exactly to
+through-arcs. The local zero-number theorem [<a href="#bib-Angenent">2</a>] implies that
+at a multiple zero an even number of same-level intersections disappears,
+possibly leaving one intersection at an odd-order zero. Locally all
+these labels are identical, because \(b_I\ne b_O\). Intersections with
+different labels cannot collide or exchange their cyclic order.
+Hence the word changes only by deletion of adjacent equal-label pairs.
+Such a deletion cannot increase its number of unequal adjacent pairs:
+for neighboring labels \(a,b\) and the deleted label \(x\),
+\[
+ \ind_{\{a\ne b\}}
+ \le \ind_{\{a\ne x\}}+\ind_{\{x\ne b\}} .
+\]
+This proves monotonicity for the loop. The local statement can also be
+obtained by applying the zero-number theorem on a small parameter
+interval with nonzero boundary values around each multiple zero.
+An identically zero level solution would make the loop coincide with
+a comparison circle; forward uniqueness rules this out when the
+terminal circles are transverse. A loop extinct before \(t\) contributes
+zero at the terminal time.</p>
+
+<p>Summing the per-loop inequalities proves (<a href="#eq-annmono">3.1</a>).
+The initial count is finite: every through-arc has length at least the
+positive width of the compact initial annulus, whose total nodal length
+is finite. Alternatively Lemma&nbsp;<a href="#lem-localfinite">2.1</a> reduces the sum to
+finitely many relevant loops.</p>
+
+<p>It remains to justify transversality at the chosen deterministic
+initial and terminal radii. For any fixed smooth curve, centers of
+circles of a fixed radius tangent to it lie in the images of the two
+normal-offset maps \(x\mapsto x\pm r n(x)\), a planar null set.
+The same is true for a countable collection of curves.
+Stationarity and Tonelli's theorem imply that the probability that a
+circle about a fixed deterministic center is tangent to \(\Gamma_u\)
+is zero, for each fixed \(u,r\). This applies to the two endpoint times;
+intermediate tangencies were already handled by the zero-number theorem.
+<span class="qed">∎</span></p>
+
+</div>
+
+<div class="thm thm-plain" id="lem-localIBP">
+
+<p><strong>Lemma 3.2</strong> (Local length–curvature inequality). 
+At transverse radii, for any locally finite union of smooth embedded loops,
+<a id="eq-localIBP"></a>\[\mu(B_r)\le
+ 4rN(r,2r)+4r^2\int_{\Gamma\cap B_{2r}}\kappa^2\dd s . \tag{3.2}\]</p>
+
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> 
+Consider a proper component \(\sigma\) of \(\Gamma\cap B_{2r}\) that meets
+\(B_r\). Its two endpoints are on \(\partial B_{2r}\).
+Writing \(T=\partial_sX\), \(\ell=\HH^1(\sigma)\), and
+\(E_\sigma=\int_\sigma\kappa^2\dd s\), integration by parts gives
+\[
+ \ell=[X\cdot T]_{\partial\sigma}
+       -\int_\sigma X\cdot\kappa n\dd s
+ \le4r+2r\sqrt{\ell E_\sigma}
+ \le4r+\frac{\ell}{2}+2r^2E_\sigma .
+\]
+Consequently \(\ell\le8r+4r^2E_\sigma\).
+Each such component contains at least two distinct through-arcs,
+one entering the smaller disk and one leaving it.
+If a whole loop is contained in \(B_{2r}\), the boundary term vanishes;
+Cauchy–Schwarz directly gives \(\ell\le4r^2E_\sigma\).
+Sum these estimates over the disjoint components that meet \(B_r\).
+The number of proper components is at most \(N(r,2r)/2\), and their
+curvature energies sum to at most the energy in \(B_{2r}\).
+<span class="qed">∎</span></p>
+
+</div>
+
+<div class="thm thm-plain" id="prop-reduction">
+
+<p><strong>Proposition 3.3</strong> (Stationary reduction). 
+For every fixed \(r&gt;0\) and almost every \(t&gt;0\),
+<a id="eq-reduction"></a>\[a(t)\le
+ \frac{4}{\pi r}
+ \E N_0\!\left(\sqrt{r^2+2t},\sqrt{4r^2+2t}\right)
+ +16r^2D(t). \tag{3.3}\]
+The same inequality holds for a deterministic choice \(r=r(t)&gt;0\) for
+almost every \(t\).</p>
+
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> 
+Apply Lemmas&nbsp;<a href="#lem-sturm">3.1</a> and <a href="#lem-localIBP">3.2</a>, take expectations,
+and use (<a href="#eq-intensities">2.5</a>). Dividing by \(\pi r^2\) gives the
+curvature coefficient
+\(4r^2|B_{2r}|/|B_r|=16r^2\).
+For a deterministic \(r(t)\), endpoint transversality holds with probability
+one for each fixed \(t\); Tonelli supplies the almost-everywhere statement
+in \(t\). The exceptional set where \(D(t)=\infty\) is null by
+Lemma&nbsp;<a href="#lem-energy">2.3</a>.
+<span class="qed">∎</span></p>
+
+</div>
+
+<h3>4. Initial crossing multiplicity</h3>
+
+<p>Fix \(a,b&gt;0\), let \(D_R=[0,aR]\times[0,bR]\), and distinguish its left and
+right sides. A <em>proper crosscut</em> is an injective compact arc with one
+endpoint on each marked side and all its other points in the interior.
+Let \(N_R(g)\) be the maximum number of pairwise disjoint proper crosscuts
+of the zero set of \(g\) in \(D_R\).
+For regular zero sets transverse to the boundary and nonzero at corners,
+the crosscuts counted here are exactly the connected components of the
+zero set in the rectangle with endpoints on the marked sides.
+In particular \(N_R(f)\) is finite and bounded by the zero count on the
+left side.
+For measurability, restrict this definition to the open set of
+\(C^2\) fields with no zero-valued stratified critical point, and set the
+count equal to zero on its complement. On that open set the count is
+locally constant by the box-isotopy lemma used below; hence this
+extension is Borel measurable. The exceptional set has BF probability
+zero, and all applications to \(f_\rho\) below occur on the regular
+coupling event.</p>
+
+<div class="thm thm-plain" id="thm-rect">
+
+<p><strong>Theorem 4.1</strong> (Crossing multiplicity). 
+For the field (<a href="#eq-cov">1.1</a>), there are \(C,R_0&gt;0\), depending only on \(a,b\),
+such that
+<a id="eq-rectbound"></a>\[\E N_R(f)\le C\frac{\log R}{\sqrt{\log\log R}},
+ \qquad R\ge R_0. \tag{4.1}\]
+The constants are uniform under translation of the rectangle.</p>
+
+</div>
+
+<p>We prove this theorem through several explicit steps.</p>
+
+<h4>4.1. Zero overcrowding on unit segments</h4>
+
+<div class="thm thm-plain" id="lem-zeros">
+
+<p><strong>Lemma 4.2</strong>. 
+For every horizontal or vertical segment \(e\) of length at most one,
+its BF zero count \(Z_e\) satisfies, uniformly over position,
+<a id="eq-zerotail"></a>\[\PP(Z_e\ge m)\le C\exp(-c m^2\log m),\qquad m\ge m_0 . \tag{4.2}\]
+In particular \(\sup_e\E Z_e^2&lt;\infty\).</p>
+
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> 
+On a unit line segment the restricted process has covariance
+\(\exp(-(u-v)^2/2)\) and spectral measure \(N(0,1)\).
+In the notation of [<a href="#bib-Priya">8</a>, Theorem 1.1],
+\[
+ D_n=\max\{1,(\E|Z|^{2n})^{1/2},(\E|Z|^{2n+2})^{1/2}\},
+ \qquad Z\sim N(0,1),
+\]
+and the Gaussian moment formula gives \(D_n^{1/n}\le C\sqrt n\).
+Use that theorem with its parameter \(\epsilon=1/8\) and interval
+length \(T=1\). For all sufficiently large \(n\), its integer and
+interval-size restrictions hold, and the expression inside its
+logarithm is at least \(c n^{1/4}\). Its upper bound is therefore
+(<a href="#eq-zerotail">4.2</a>). Shorter segments are contained in unit segments.
+The moment assertion follows by summing the tail.
+<span class="qed">∎</span></p>
+
+</div>
+
+<h4>4.2. A topology-preserving finite-range approximation</h4>
+
+<p>Realize the BF field as
+<a id="eq-whitenoise"></a>\[f=q*W,\qquad q(x)=\sqrt{2/\pi}\,e^{-|x|^2}, \tag{4.3}\]
+where \(W\) is planar white noise. Direct convolution gives
+\(q*q(x)=e^{-|x|^2/2}\).
+Choose a fixed radial smooth cutoff \(\chi\), equal to one on \(B_{1/2}\),
+supported in \(\overline B_1\), and set
+<a id="eq-truncation"></a>\[q_\rho(x)=q(x)\chi(x/\rho),\qquad
+ f_\rho=q_\rho*W,\qquad \rho=K\sqrt{\log R}. \tag{4.4}\]
+All noise determining \(f_\rho(x)\) lies within distance \(\rho\) of \(x\).</p>
+
+<p>Choose a large axis-aligned containing box \(U_R\), with integer vertices
+and diameter \(O(R)\),
+that contains \(D_R\) and a fixed positive multiple of \(R\) as a buffer.
+It contains every \(O(\rho)\)-box used below once \(R\) is sufficiently
+large. Consider all unit-grid edges contained in \(U_R\), the four boundary
+edges of \(D_R\) split into pieces of length at most one, and their endpoints.</p>
+
+<div class="thm thm-plain" id="lem-coupling">
+
+<p><strong>Lemma 4.3</strong> (Coupling). 
+For every prescribed \(A&gt;0\), \(K\) in (<a href="#eq-truncation">4.4</a>) can be chosen
+so that, for all large \(R\), an event \(\mathcal T_R\) of probability at
+least \(1-CR^{-A}\) has the following properties:</p>
+
+<ol style="list-style-type: lower-roman">
+<li>\(N_R(f)=N_R(f_\rho)\);
+</li>
+<li>the two fields have the same zero count on each relevant unit-grid edge;
+</li>
+<li>their positive and negative crossing events in \(D_R\) agree.
+</li>
+</ol>
+
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> 
+Fix \(B&gt;A+6\), put \(\eps=R^{-B}\), and write \(h=f_\rho-f\).
+For each fixed derivative order,
+\[
+ \|\partial^\alpha(q-q_\rho)\|_{L^2(\R^2)}^2
+ \le C_\alpha\rho^{C_\alpha}e^{-c\rho^2}.
+\]
+Local Sobolev embedding on a unit box, using derivatives through order
+four on a slightly larger box, gives
+\[
+ \E\|h\|_{C^1(\text{unit box})}^2
+ \le C\rho^{C}e^{-c\rho^2}.
+\]
+Markov's inequality and a cover by \(O(R^2)\) unit boxes imply
+<a id="eq-C1error"></a>\[\PP(\|h\|_{C^1(U_R)}&gt;\eps)
+ \le CR^2\eps^{-2}\rho^C e^{-c\rho^2}
+ \le CR^{-A} \tag{4.5}\]
+when \(K\) is sufficiently large.
+The same Sobolev argument and Gaussian moments show, for any fixed
+\(p\ge2\),
+\[
+ \E\|f\|_{C^2(\text{unit box})}^p\le C_p.
+\]
+Consequently, on taking \(p&gt;A+4\),
+<a id="eq-C2bound"></a>\[\PP(\|f\|_{C^2(U_R)}&gt;R)\le C_pR^{2-p}\le CR^{-A}. \tag{4.6}\]
+Enlarge \(U_R\) slightly in these displays if needed to apply Sobolev
+embedding at its boundary.</p>
+
+<p>On the complement of the event in (<a href="#eq-C2bound">4.6</a>),
+\((f,\nabla f)\) is \(CR\)-Lipschitz.
+If \(|f|+|\nabla f|\le10\eps\) somewhere, an \(\eps/(CR)\)-mesh has a point
+where these three Gaussian coordinates are \(O(\eps)\).
+There are \(O(R^4\eps^{-2})\) mesh points and their joint densities are
+uniformly bounded. Therefore the probability of such a near-critical
+point, together with the \(C^2\) bound, is at most
+<a id="eq-bulinskaya"></a>\[CR^4\eps. \tag{4.7}\]
+On the relevant edges use instead \((f,\partial_\tau f)\). Their total
+length is \(O(R^2)\), and the number of edges is \(O(R^2)\), so the
+corresponding mesh has \(O(R^3\eps^{-1})\) points. The failure probability
+is at most \(CR^3\eps\). At all endpoints the bound is \(CR^2\eps\).
+The densities are uniformly bounded because these BF Gaussian vectors
+have fixed nondegenerate covariance; only horizontal and vertical
+directions occur.</p>
+
+<p>On the complement of these events and (<a href="#eq-C1error">4.5</a>), the homotopy
+\[
+ f_u=f+u h,\qquad 0\le u\le1,
+\]
+has no zero-valued critical point in \(D_R\), no zero-valued tangential
+critical point on its boundary or on any relevant grid edge, and no
+zero at any of the endpoints or corners.
+Apply the box-isotopy lemma [<a href="#bib-BMM">4</a>, Lemma 12] to \(D_R\):
+its nodal set is carried to that of \(f_u\) by an isotopy preserving
+each boundary stratum, normalized to start at the identity.
+This preserves the pairing of boundary endpoints,
+hence \(N_R\). It also preserves signs on the complementary regions:
+along the isotopy, the value at the image of a point outside the initial
+zero set is continuous and never zero.
+Separately, on each grid edge, simple-root continuation and nonvanishing
+at the endpoints preserve the number of zeros. Thus no single global
+isotopy of the whole grid arrangement is required.
+The displayed failure bounds, with \(B&gt;A+6\), prove the lemma.
+<span class="qed">∎</span></p>
+
+</div>
+
+<p>We will also use strict-positive rectangular RSW:
+for each fixed-aspect rectangle, the probability of a transverse
+strictly positive BF crossing is bounded below by a positive constant
+uniformly in scale [<a href="#bib-BG">3</a>, Proposition 4.11(1)].
+A transverse strict-positive crossing excludes a nodal crossing between
+the marked sides. Hence Lemma&nbsp;<a href="#lem-coupling">4.3</a> implies that for some
+\(c_0&gt;0\) and all large \(R\),
+<a id="eq-singlecross"></a>\[\PP(f_\rho\text{ has a marked-side nodal crossing in }D_R)
+ \le1-c_0 . \tag{4.8}\]
+Using a strict-positive blocker is important: a nonnegative path could
+intersect a nodal path at a zero.</p>
+
+<h4>4.3. Planar separation from local congestion</h4>
+
+<p>Choose \(A&gt;6\) henceforth. By Lemma&nbsp;<a href="#lem-zeros">4.2</a> and a union bound over
+the \(O(R^2)\) relevant unit-grid edges, with
+<a id="eq-m"></a>\[m_R=C_A\sqrt{\frac{\log R}{\log\log R}}, \tag{4.9}\]
+the probability that some such edge has more than \(m_R\) zeros of \(f\)
+is at most \(CR^{-A}\). Let \(\mathcal G_R\) be the intersection of this
+event's complement with \(\mathcal T_R\). Then
+<a id="eq-good"></a>\[\PP(\mathcal G_R^c)\le CR^{-A}, \tag{4.10}\]
+and every relevant unit-grid edge also has at most \(m_R\) zeros of
+\(f_\rho\). Thus every integer-grid box of side lengths at most
+\(C_1(\rho+1)\) has at most
+<a id="eq-congestion"></a>\[C_2(\rho+1)m_R \tag{4.11}\]
+zeros on its boundary. The constants \(C_1,C_2\) below are fixed geometric
+constants; the buffer in \(U_R\) allows these boxes to protrude beyond \(D_R\).</p>
+
+<div class="thm thm-plain" id="lem-packing">
+
+<p><strong>Lemma 4.4</strong> (Ordered-crosscut separation). 
+On \(\mathcal G_R\), from any \(k\) disjoint proper nodal crosscuts of
+\(f_\rho\) in \(D_R\) one can select at least
+\(\lfloor k/M_R\rfloor\) whose mutual Euclidean distances exceed
+\(2\rho+2\sqrt2\), where
+<a id="eq-M"></a>\[M_R=\left\lceil C_3(\rho+1)m_R\right\rceil
+ \le C\frac{\log R}{\sqrt{\log\log R}}. \tag{4.12}\]</p>
+
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> 
+Order the crosscuts from bottom to top as \(\gamma_1,\ldots,\gamma_k\).
+Every intermediate crosscut separates the rectangle into an upper and
+a lower part. Therefore any path in the rectangle joining a point of
+\(\gamma_i\) to a point of \(\gamma_j\), \(i&lt;j\), intersects each
+\(\gamma_\ell\), \(i&lt;\ell&lt;j\).
+This also holds when the points are on the marked boundary sides.</p>
+
+<p>Suppose points on \(\gamma_i,\gamma_j\) have distance at most
+\(d=2\rho+2\sqrt2+2\). The straight chord joining them stays inside the
+convex rectangle. Put that chord strictly inside an integer-grid box
+of side lengths at most \(C_1(\rho+1)\). Every intermediate crosscut
+meets this box, and must leave it because its horizontal extent is \(aR\),
+whereas the box diameter is \(O(\rho)=o(R)\).
+The disjoint crosscuts therefore give distinct zeros on the boundary
+of this box. By (<a href="#eq-congestion">4.11</a>),
+\(j-i-1\le C_2(\rho+1)m_R\).
+Choose \(C_3\) larger than this constant, with enough slack for the
+additive terms. Taking every \(M_R\)-th crosscut gives the assertion.
+The argument uses actual nodal crosscuts, not curves in a thickened
+nodal set.
+<span class="qed">∎</span></p>
+
+</div>
+
+<h4>4.4. BKR with whole white-noise boxes as coordinates</h4>
+
+<p>We give the underlying product-space construction explicitly.
+Partition the plane into half-open unit squares \(C_z=z+[0,1)^2\).
+The independent restrictions \(W_z=W\restriction C_z\) can be realized
+as random elements of
+\[
+ S_z=\{u\in H^{-2}(\R^2):\supp u\subseteq\overline C_z\}.
+\]
+Here restriction means \(W_z(\varphi)=W(\ind_{C_z}\varphi)\), using
+the white-noise isometry on \(L^2(\R^2)\); independence follows from
+orthogonality of functions supported in disjoint half-open cells.
+These are closed separable Hilbert subspaces, hence standard Borel spaces.
+Indeed the expected squared \(H^{-2}\)-norm of a white-noise restriction
+is finite, since
+\(\int_{\R^2}(1+|\xi|^2)^{-2}\dd\xi&lt;\infty\).
+Convolution with \(q_\rho\in C_c^\infty\) is defined for every element
+of each \(S_z\), not merely for almost every white-noise sample.
+Only finitely many coordinates, those whose closed squares meet
+\(D_R+\overline B_\rho\), affect \(f_\rho\) in \(D_R\).</p>
+
+<p>For a Borel event \(A\) in this finite product, a coordinate set \(J\)
+<em>certifies</em> \(A\) at \(\omega\) if every configuration agreeing with
+\(\omega\) on \(J\) belongs to \(A\). Let \(A^{\square n}\) denote
+simultaneous occurrence with \(n\) pairwise disjoint certifying coordinate
+sets. The product-space BKR inequality [<a href="#bib-AGH">1</a>, Theorem 6], after
+coordinatewise Borel coding of the \(S_z\)'s into Borel subsets of \(\R\),
+states
+<a id="eq-BKR"></a>\[\PP(A^{\square n})\le\PP(A)^n . \tag{4.13}\]
+This formulation allows arbitrary Borel events, not only increasing ones.
+The completed product measure handles the measurability of the
+disjoint-occurrence event.</p>
+
+<p>Let \(\mathcal A_\rho\) be the event that the zero set of \(f_\rho\) in
+\(D_R\) contains a nonempty compact connected subset meeting both marked
+sides. This event is Borel. To see this, the nonempty compact connected
+subsets of \(D_R\) meeting both closed sides form a compact family in the
+Hausdorff hyperspace. The condition \(K\subseteq\{g=0\}\) is closed in
+\(C(D_R)\) times this family, and projection over a compact space preserves
+closedness. The map from the finitely many \(S_z\)-coordinates to
+\(f_\rho|_{D_R}\in C(D_R)\) is continuous.
+For regular fields the event is exactly the usual nodal-path crossing
+event. Defining it on all continuous fields is useful for the arbitrary
+coordinate completions in the next argument.</p>
+
+<div class="thm thm-plain" id="lem-witness">
+
+<p><strong>Lemma 4.5</strong> (Separated crossings have disjoint certificates). 
+If \(f_\rho\) has \(n\) proper nodal crosscuts whose mutual distances exceed
+\(2\rho+2\sqrt2\), then its noise configuration belongs to
+\(\mathcal A_\rho^{\square n}\).</p>
+
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> 
+For a particular crosscut \(\gamma\), fix every coordinate \(W_z\) whose
+closed square meets \(\gamma+\overline B_\rho\).
+This fixes \(f_\rho(x)\) for every \(x\in\gamma\), because the convolution
+kernel has support in \(\overline B_\rho\).
+Thus every completion of the other coordinates retains
+\(\gamma\subseteq\{f_\rho=0\}\) and belongs to \(\mathcal A_\rho\), even
+if the completed field is nongeneric.
+If two curves used the same coordinate, points on them would have
+distance at most \(2\rho+\sqrt2\). The assumed separation therefore
+makes their certifying coordinate sets disjoint.
+There are finitely many relevant box coordinates; no finiteness of the
+number of scalar Gaussian coefficients inside a box is asserted or needed.
+<span class="qed">∎</span></p>
+
+</div>
+
+<div class="proof">
+
+<p><em>Proof of Theorem&nbsp;<a href="#thm-rect">4.1</a>.</em> 
+On \(\mathcal G_R\), \(N_R(f)=N_R(f_\rho)\).
+Lemmas&nbsp;<a href="#lem-packing">4.4</a> and <a href="#lem-witness">4.5</a>, followed by
+(<a href="#eq-BKR">4.13</a>) and (<a href="#eq-singlecross">4.8</a>), give, for \(k\ge1\),
+<a id="eq-tailN"></a>\[\PP(N_R(f)\ge k,\mathcal G_R)
+ \le (1-c_0)^{\lfloor k/M_R\rfloor}. \tag{4.14}\]
+This is an unconditional BKR bound: we never condition the product
+measure on \(\mathcal G_R\). The good event supplies only a deterministic
+implication into the disjoint-occurrence event.
+Summing (<a href="#eq-tailN">4.14</a>) over \(k\) gives
+\(\E[N_R(f)\ind_{\mathcal G_R}]\le C M_R\).</p>
+
+<p>For the exceptional event, \(N_R(f)\) is bounded by the number of zeros
+on the left side of \(D_R\). Partition that side into \(O(R)\) segments
+of length at most one. Lemma&nbsp;<a href="#lem-zeros">4.2</a> and Minkowski's inequality,
+without any independence assumption, give
+\(\|N_R(f)\|_{L^2}\le CR\). Hence
+\[
+ \E[N_R(f)\ind_{\mathcal G_R^c}]
+ \le CR\,\PP(\mathcal G_R^c)^{1/2}
+ \le CR^{1-A/2}.
+\]
+Together with (<a href="#eq-M">4.12</a>) this proves (<a href="#eq-rectbound">4.1</a>).
+Regularity and transversality of \(f_\rho\) hold almost surely:
+its spectral density is \(|\widehat q_\rho|^2\), whose support contains
+an open set, so the required jets are nondegenerate. Alternatively all
+path-geometry arguments above are restricted to \(\mathcal G_R\), where
+the requisite topology and transversality were explicitly preserved.
+Stationarity makes the estimates uniform under translation.
+<span class="qed">∎</span></p>
+
+</div>
+
+<h4>4.5. From rectangular crosscuts to annular through-arcs</h4>
+
+<div class="thm thm-plain" id="cor-ann">
+
+<p><strong>Corollary 4.6</strong>. 
+For fixed \(0&lt;\alpha&lt;\beta&lt;\infty\), there are \(C,R_0&gt;0\) such that
+<a id="eq-annbound"></a>\[\E N_0(\alpha R,\beta R)
+ \le C\frac{\log R}{\sqrt{\log\log R}},\qquad R\ge R_0 . \tag{4.15}\]
+No uniformity as \(\beta-\alpha\downarrow0\) is asserted.</p>
+
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> 
+Let \(h=(\beta-\alpha)R/10\), and cover \(\partial B_{\alpha R}\)
+by the squares of an axis-aligned \(h\)-grid meeting it.
+Their number depends only on \(\alpha,\beta\).
+Every radial through-arc starts in one of these squares \(S\) and must
+leave the concentric square \(3S\), since the distance between its
+endpoints is at least \((\beta-\alpha)R\).
+At its first exit, suppose it leaves through the top side of \(3S\).
+Take its last earlier visit to the horizontal line through the top
+side of \(S\). The intervening segment is a vertical crosscut of the
+fixed top strip of \(3S\setminus S\), a rectangle of width \(3h\) and
+height \(h\). The other exit directions give three analogous strips.
+For almost every realization these deterministic strip boundaries are
+transverse and their vertices are nonzero, so no corner ambiguity occurs.</p>
+
+<p>Assign each annular through-arc to one such strip. Disjoint annular arcs
+give disjoint crosscuts within each strip, and there are only a
+shape-dependent finite number of strips. Bound the annular count by the
+sum of their rectangular counts and apply Theorem&nbsp;<a href="#thm-rect">4.1</a>,
+with the marked sides chosen for the crossing direction.
+<span class="qed">∎</span></p>
+
+</div>
+
+<h3>5. Closing the flow estimate</h3>
+
+<div class="proof">
+
+<p><em>Proof of the upper bound in Theorem&nbsp;<a href="#thm-main">1.1</a>.</em> 
+Fix \(0&lt;\delta&lt;1/\sqrt8\), put \(r=\delta\sqrt t\), and set
+\(\eps_0=16\delta^2&lt;2\).
+The initial annulus in Proposition&nbsp;<a href="#prop-reduction">3.3</a> has radii
+\[
+ \alpha_\delta\sqrt t,\quad \beta_\delta\sqrt t,\qquad
+ \alpha_\delta=\sqrt{2+\delta^2},\quad
+ \beta_\delta=\sqrt{2+4\delta^2}.
+\]
+These constants are distinct and fixed; \(\delta\) does not vary with time.
+Corollary&nbsp;<a href="#cor-ann">4.6</a> and Lemma&nbsp;<a href="#lem-energy">2.3</a> imply, for almost every
+sufficiently large \(t\),
+<a id="eq-ODE"></a>\[a(t)+\eps_0 t a'(t)\le C_\delta t^{-1/2}H(t),
+ \qquad H(t)=\frac{\log t}{\sqrt{\log\log t}} . \tag{5.1}\]
+The replacement of \(H(\sqrt t)\) by \(H(t)\) changes only constants.
+The function \(H\) is increasing for all sufficiently large \(t\).
+Let \(p=1/\eps_0&gt;1/2\), and choose \(t_0\) beyond all thresholds.
+Multiplying (<a href="#eq-ODE">5.1</a>) by \(p t^{p-1}\) and using absolute continuity,
+\[
+ t^p a(t)\le t_0^p a(t_0)
+   +C_\delta p\int_{t_0}^t s^{p-3/2}H(s)\dd s
+ \le t_0^p a(t_0)+
+   \frac{C_\delta p}{p-\tfrac12}H(t)t^{p-1/2}.
+\]
+Divide by \(t^p\) and absorb the faster-decaying homogeneous term.
+This proves the asserted upper bound. In particular the direction of
+the differential inequality gives an upper bound on length density.
+<span class="qed">∎</span></p>
+
+</div>
+
+<div class="proof">
+
+<p><em>Proof of the lower bound in Theorem&nbsp;<a href="#thm-main">1.1</a>.</em> 
+The nodal-circuit version of BF RSW
+[<a href="#bib-BG">3</a>, Remark 4.10] provides \(p_*&gt;0\) and a fixed \(K&gt;2\) such that,
+uniformly for all large \(R\), with probability at least \(p_*\) there is
+an initial nodal loop surrounding \(B_{2R}\) and contained in \(B_{KR}\).
+Regularity of the nodal set means that the circuit is an entire nodal
+component. Its filled area is at least \(4\pi R^2\). At time \(R^2\),
+(<a href="#eq-classical">1.4</a>) leaves area at least \(2\pi R^2\), while convex-hull
+containment keeps the descendant in \(B_{KR}\).
+The isoperimetric inequality gives its length at least \(2\sqrt2\pi R\).
+Consequently
+\[
+ a(R^2)\pi K^2R^2=\E\mu_{R^2}(B_{KR})
+ \ge p_*\,2\sqrt2\pi R .
+\]
+This gives \(a(t)\ge c/\sqrt t\) for large \(t\).
+The two bounds on \(L(t)=1/a(t)\) follow by taking reciprocals.
+<span class="qed">∎</span></p>
+
+</div>
+
+<h3 id="sec-scope">6. Scope and the unresolved sharp estimate</h3>
+
+<p>The proof is specific to planar embedded curve shortening.
+It makes no claim for higher-dimensional mean curvature flow.
+The use of compact nodal components concerns the zero level of the
+centered BF field.</p>
+
+<p>The two losses in (<a href="#eq-rectbound">4.1</a>) are visible:
+\(\rho\asymp\sqrt{\log R}\) is the truncation range needed for a
+polynomially small global topology error, and
+\(m_R\asymp\sqrt{\log R/\log\log R}\) controls the worst unit-edge zero
+count across the box. Their product bounds the number of strands that
+must be discarded to obtain disjoint noise certificates.
+No optimality of this logarithm is claimed.</p>
+
+<p>The same deterministic reduction would prove \(a(t)\le C t^{-1/2}\)
+if one had
+\[
+ \sup_{R\ge R_0}\E N_0(\alpha R,\beta R)&lt;\infty
+\]
+for each fixed annulus shape used in the argument.
+That uniform multiplicity estimate is <em>not</em> proved in this note.
+Neither a numerical arm exponent nor convergence to a percolation
+scaling limit is used to obtain the weaker bound (<a href="#eq-main">1.3</a>).</p>
+
+<h3 id="sec-audit">Appendix A. Verification record</h3>
+
+<p>This appendix records the two internal verification passes requested for
+this draft. It is not a claim of external peer review or formal
+machine verification.</p>
+
+<p><strong>Pass 1: lemma-level checks.</strong> 
+Separate deterministic and probabilistic reviews checked the saved source.
+The deterministic review verified local finiteness, mass transport through
+extinction, the two-level Sturm argument, the coefficient \(16r^2D(t)\),
+and the integrating factor. The probabilistic review checked the exact
+hypotheses of the cited zero-overcrowding, RSW, isotopy, and BKR results,
+as well as the mesh counts and all-completions certificates. No substantive
+gap was identified. The review led to explicit measurability of the
+crosscut count, normalization of the isotopy at the identity, and a
+correction to the location of the cited isotopy lemma.</p>
+
+<p><strong>Pass 2: end-to-end adversarial check.</strong> 
+A fresh end-to-end internal audit checked the interfaces between the
+lemmas: that the transported energy is the same energy in the local
+inequality; that the two-level Sturm argument controls through-arcs;
+that topology preservation transfers boundary pairing; that separated
+crossings certify the same Borel event for every noise completion;
+that BKR is applied without conditioning; and that the annular reduction
+and the deterministic choice \(r=\delta\sqrt t\) give the claimed
+almost-everywhere differential inequality and an all-times conclusion.
+The audit also checked the lower bound separately. It corrected the
+published Beffara–Gayet bounded-components citation to Corollary 1.5.
+The containing grid box and the definition of white-noise restrictions
+were made explicit during this pass. No remaining substantive gap was
+found in these checks. The sharp bound stated as unresolved in
+Section&nbsp;<a href="#sec-scope">6</a> remains unproved here.</p>
+
+<h3 id="references">References</h3>
+
+<ol class="bib">
+<li id="bib-AGH">
+R.&nbsp;Arratia, S.&nbsp;Garibaldi and A.&nbsp;W.&nbsp;Hales,
+<em>The van den Berg–Kesten–Reimer operator and inequality for infinite spaces</em>,
+arXiv:1508.05337, version 3 (2015).
+Theorem 6 and Corollary 7.
+<a href="https://arxiv.org/pdf/1508.05337">https://arxiv.org/pdf/1508.05337</a>.
+
+</li>
+<li id="bib-Angenent" value="2">
+S.&nbsp;Angenent,
+<em>The zero set of a solution of a parabolic equation</em>,
+J. reine angew. Math. <strong>390</strong> (1988), 79–96.
+<a href="https://doi.org/10.1515/crll.1988.390.79">https://doi.org/10.1515/crll.1988.390.79</a>.
+
+</li>
+<li id="bib-BG" value="3">
+V.&nbsp;Beffara and D.&nbsp;Gayet,
+<em>Percolation of random nodal lines</em>,
+Publ. Math. IHES <strong>126</strong> (2017), 131–176.
+Corollary 1.5, Proposition 4.11(1), and Remark 4.10.
+Numbering here refers to the published version.
+<a href="https://doi.org/10.1007/s10240-017-0093-0">https://doi.org/10.1007/s10240-017-0093-0</a>.
+
+</li>
+<li id="bib-BMM" value="4">
+D.&nbsp;Beliaev, M.&nbsp;McAuley and S.&nbsp;Muirhead,
+<em>A covariance formula for the number of excursion set components
+of Gaussian fields and applications</em>,
+Ann. Inst. H. Poincare Probab. Statist. <strong>61</strong> (2025), 713–745.
+See the box-isotopy lemma in Section 4 (Lemma 12 in the cited preprint).
+<a href="https://arxiv.org/pdf/2303.07823">https://arxiv.org/pdf/2303.07823</a>.
+
+</li>
+<li id="bib-GH" value="5">
+M.&nbsp;Gage and R.&nbsp;S.&nbsp;Hamilton,
+<em>The heat equation shrinking convex plane curves</em>,
+J. Differential Geom. <strong>23</strong> (1986), 69–96.
+<a href="https://doi.org/10.4310/jdg/1214439902">https://doi.org/10.4310/jdg/1214439902</a>.
+
+</li>
+<li id="bib-Grayson" value="6">
+M.&nbsp;A.&nbsp;Grayson,
+<em>The heat equation shrinks embedded plane curves to round points</em>,
+J. Differential Geom. <strong>26</strong> (1987), 285–314.
+<a href="https://doi.org/10.4310/jdg/1214441371">https://doi.org/10.4310/jdg/1214441371</a>.
+
+</li>
+<li id="bib-HLR" value="7">
+M.&nbsp;Hairer, K.&nbsp;Lê and T.&nbsp;Rosati,
+<em>The Allen–Cahn equation with generic initial datum</em>,
+Probab. Theory Related Fields (2023).
+Lemma 5.8 and Corollary 5.7.
+<a href="https://doi.org/10.1007/s00440-023-01198-5">https://doi.org/10.1007/s00440-023-01198-5</a>.
+
+</li>
+<li id="bib-Priya" value="8">
+L.&nbsp;Priya,
+<em>Overcrowding estimates for zero count and nodal length of stationary
+Gaussian processes</em>,
+arXiv:2012.10857 (2020), Theorem 1.1.
+<a href="https://arxiv.org/pdf/2012.10857">https://arxiv.org/pdf/2012.10857</a>.
+</li>
+</ol>
+{% endraw %}

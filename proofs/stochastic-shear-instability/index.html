@@ -1,0 +1,706 @@
+---
+title: "A cone and compactness argument for statistical instability of a stochastically forced shear"
+date: 2026-10-22
+status: "unchecked"
+---
+{% raw %}
+<div class="tex-macros" hidden>\(
+\newcommand{\HH}{H}
+\newcommand{\EE}{\mathbb E}
+\newcommand{\RR}{\mathbb R}
+\newcommand{\TT}{\mathbb T}
+\newcommand{\NN}{\mathbb N}
+\newcommand{\ip}[2]{\langle #1,#2\rangle}
+\newcommand{\norm}[1]{\lVert #1\rVert}
+\newcommand{\KK}{\mathcal K}
+\newcommand{\DD}{\mathcal D}
+\newcommand{\LL}{\mathcal L}
+\newcommand{\BB}{\mathcal B}
+\newcommand{\SSS}{\mathcal S}
+\newcommand{\Law}{\operatorname{Law}}
+\newcommand{\Ran}{\operatorname{Ran}}
+\newcommand{\Id}{I}
+\)</div>
+
+<div class="abstract">
+
+<p><strong>Abstract.</strong> 
+For a fixed elongated rectangular torus and forcing in the single vorticity
+mode \(\sin y\), we give an argument for existence, at sufficiently small
+viscosity, of an ergodic invariant measure not supported on shear flows.
+The key is an exact energy–enstrophy identity. It provides tightness of a
+normalized transverse process even if its amplitude tends to zero.
+Concentration on the shear law would then produce an invariant probability
+on a negative-energy hyperboloid for the frozen linearized Euler equation.
+A Fourier-block argument rules out that probability. The argument targets
+existence of a non-shear stationary state; it does not estimate a Lyapunov
+exponent or an explicit viscosity threshold.</p>
+
+</div>
+
+<p><strong>Status.</strong> 
+This revision has been checked for the precise theorem below, including the
+stochastic scaling, quadratic identities, spectral obstruction, and passage
+to invariant measures. The review found no fatal gap in that argument and
+expanded two previously abbreviated analytic steps: continuity of the lift
+at zero amplitude and convergence of the boundary semigroups.
+This is an internally reviewed research proof, not an independently refereed
+or formally verified result. The standard two-dimensional stochastic
+Navier–Stokes well-posedness facts used are stated explicitly.</p>
+
+<p>The conclusion is existence of a non-shear invariant law at fixed aspect
+ratio. The stronger exit-time statement in the original local manuscript&nbsp;[<a href="#bib-local">1</a>]
+cannot hold as written: it includes exact shear initial conditions, which
+remain shears for all time. Nor does this note establish the manuscript's
+proposed simultaneous small-aspect-ratio scaling.</p>
+
+<h3>1. Statement and normalization</h3>
+
+<p>Fix \(0&lt;\varepsilon&lt;1\) and
+\[
+\TT_\varepsilon^2=(\RR/(2\pi\varepsilon^{-1}\mathbb Z))
+\times(\RR/(2\pi\mathbb Z)).
+\]
+Use normalized Lebesgue measure, let \(\HH=L^2_0(\TT_\varepsilon^2;\RR)\),
+and set \(A=-\Delta\). Its eigenvalues are
+\(\lambda_{m,n}=\varepsilon^2m^2+n^2\), excluding \((m,n)=(0,0)\).
+All velocities have zero spatial mean. With
+\(\nabla^\perp=(-\partial_y,\partial_x)\), put
+\[
+u(w)=-\nabla^\perp A^{-1}w,\qquad
+\BB(v,w)=u(v)\cdot\nabla w,\qquad e(x,y)=\sin y.
+\]
+Consider
+<a id="eq-original"></a>\[d\omega=(-\nu A\omega-\BB(\omega,\omega))\,dt+\sigma e\,dW_t,
+\qquad \nu,\sigma&gt;0. \tag{1}\]
+Let \(\SSS=\{\omega:\partial_x\omega=0\}\) and
+\(P_x\omega\) be the horizontal average.</p>
+
+<div class="thm thm-plain" id="thm-main">
+
+<p><strong>Theorem 1.1</strong>. 
+For every fixed \(\varepsilon\in(0,1)\) there exists
+\(\eta_0(\varepsilon)&gt;0\) such that, whenever
+\(\nu^{3/2}/\sigma&lt;\eta_0(\varepsilon)\), equation (<a href="#eq-original">1</a>)
+has an ergodic invariant probability \(\mu_*\) with \(\mu_*(\SSS)=0\).
+In fact it can be chosen to satisfy
+\[
+\mu_*\left(\norm{u(\omega)}_2^2-\norm{\omega}_2^2&gt;0\right)=1.
+\]
+Consequently, for
+\(F(\omega)=\min\{1,\norm{(I-P_x)\omega}_2^2\}\),
+there exist deterministic non-shear initial conditions for which
+\[
+\lim_{T\to\infty}\frac1T\int_0^T F(\omega_t)\,dt
+=\int F\,d\mu_*&gt;0\qquad\hbox{almost surely}.
+\]
+The Gaussian invariant shear law therefore is not the unique invariant law.</p>
+
+</div>
+
+<p>The normalization
+\[
+\tau=\frac{\sigma}{\sqrt{\nu}}t,\qquad
+w_\tau=\frac{\sqrt{\nu}}{\sigma}\omega_{\sqrt{\nu}\tau/\sigma},
+\qquad \eta=\frac{\nu^{3/2}}{\sigma}
+\]
+converts (<a href="#eq-original">1</a>) into
+<a id="eq-normalized"></a>\[dw=(-\eta Aw-\BB(w,w))\,d\tau+\sqrt{\eta}\,e\,dB_\tau. \tag{2}\]
+The Brownian scaling is included in this calculation.
+It suffices to prove the theorem for (<a href="#eq-normalized">2</a>) as \(\eta\downarrow0\).
+In the rest of the proof the time variable is again denoted by \(t\).</p>
+
+<p>For each fixed \(\eta&gt;0\), we use the usual global mean-zero \(L^2\) vorticity
+solution in two dimensions, its continuous dependence on initial data,
+and its Feller Markov semigroup; see the framework in&nbsp;[<a href="#bib-HM">2</a>].
+The noise is smooth and finite rank.
+The energy calculations below are justified first for smooth approximations
+and then by parabolic regularization and the \(L^2\) energy bounds.
+No irreducibility or uniqueness theorem for the full process is assumed.</p>
+
+<h3>2. An exact identity and an invariant cone</h3>
+
+<p>Define
+<a id="eq-K"></a><a id="eq-D"></a>\begin{align*}
+\KK(w)&amp;=\ip{(A^{-1}-I)w}{w}
+       =\norm{u(w)}_2^2-\norm{w}_2^2, \tag{3}\\
+\DD(w)&amp;=\norm{(A-I)A^{-1/2}w}_2^2
+       =\sum_{\lambda}\frac{(\lambda-1)^2}{\lambda}|w_\lambda|^2. \tag{4}\end{align*}
+The form \(\KK\) is continuous on \(\HH\).
+Extend \(\DD\) to \(+\infty\) when its series diverges.</p>
+
+<div class="thm thm-plain" id="lem-identity">
+
+<p><strong>Lemma 2.1</strong>. 
+Along (<a href="#eq-normalized">2</a>),
+<a id="eq-identity"></a>\[\frac{d}{dt}\KK(w_t)=2\eta\{\DD(w_t)-\KK(w_t)\} \tag{5}\]
+in integrated form. In particular
+\(\KK(w_t)\ge e^{-2\eta t}\KK(w_0)\) whenever \(\KK(w_0)&gt;0\).</p>
+
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> 
+Both kinetic energy and enstrophy are conserved by the Euler nonlinearity:
+\[
+\ip{A^{-1}w}{\BB(w,w)}=\ip{w}{\BB(w,w)}=0.
+\]
+Since \(Ae=e\), both the martingale term and the Itô correction in
+\(d\KK\) vanish. The viscous contribution is
+\[
+2\ip{(A^{-1}-I)w}{-\eta Aw}
+=2\eta\ip{(A-I)w}{w}
+=2\eta(\DD(w)-\KK(w)).
+\]
+Finally \(\DD\ge0\), which gives the claimed inequality.
+<span class="qed">∎</span></p>
+
+</div>
+
+<p>The cone \(\{\KK&gt;0\}\) is nonempty: \(w_0=\cos(\varepsilon x)\) lies in it.
+Every shear has \(\KK\le0\), since its nonzero Fourier eigenvalues are \(n^2\ge1\).
+Thus \(\{\KK&gt;0\}\) is disjoint from \(\SSS\).</p>
+
+<p>Let \(E=\ker(A-I)\), let \(P\) be its orthogonal projection, and put \(Q=I-P\).
+We remove the <em>whole</em> eigenspace \(E\), including horizontal modes if
+\(\varepsilon^{-1}\) is an integer. This also handles resonant aspect ratios.
+Since the spectrum is discrete, there is a constant \(c_\varepsilon&gt;0\) such that
+<a id="eq-coercive"></a>\[\DD(q)\ge c_\varepsilon\norm{q}_{H^1}^2,\qquad q\in Q\HH. \tag{6}\]
+Indeed \((\lambda-1)^2/[\lambda(1+\lambda)]\) has a positive infimum
+over eigenvalues \(\lambda\ne1\).</p>
+
+<h3>3. Retaining the direction when the amplitude vanishes</h3>
+
+<p>For a trajectory starting with \(\KK(w_0)&gt;0\), introduce
+\[
+a=Pw,\qquad \rho=\sqrt{\KK(w)},\qquad
+\theta=\frac{Qw}{\rho}.
+\]
+Then \(\KK(\theta)=1\), \(\DD(w)=\rho^2\DD(\theta)\), and \(w=a+\rho\theta\).
+The lifted state space is the Polish space
+\[
+\mathcal X=E\times[0,\infty)\times\mathcal M,\qquad
+\mathcal M=\{\theta\in Q\HH:\KK(\theta)=1\},
+\]
+with its finite-dimensional times strong-\(L^2\) topology.
+Let \(\mathcal X_0=\{\rho=0\}\).</p>
+
+<p>For \(\rho&gt;0\), the exact equations are
+<a id="eq-lift-a"></a><a id="eq-lift-rho"></a><a id="eq-lift-theta"></a>\begin{align*}
+da={}&amp;[-\eta a-\rho P\{\BB(a,\theta)+\BB(\theta,a)\}
+                  -\rho^2P\BB(\theta,\theta)]\,dt+\sqrt{\eta}\,e\,dB_t, \tag{7}\\
+\dot\rho={}&amp;\eta\{\DD(\theta)-1\}\rho, \tag{8}\\
+\dot\theta={}&amp;-\eta A\theta
+-Q\{\BB(a,\theta)+\BB(\theta,a)\}
+-\rho Q\BB(\theta,\theta)
+-\eta\{\DD(\theta)-1\}\theta. \tag{9}\end{align*}
+Here \(\BB(a,a)=0\) for every \(a\in E\), because \(A^{-1}a=a\).
+Equations involving \(\DD\) are interpreted in integrated/mild form.</p>
+
+<div class="thm thm-plain" id="lem-feller">
+
+<p><strong>Lemma 3.1</strong>. 
+The lifted dynamics extend to a global Feller Markov process on \(\mathcal X\).
+On \(\mathcal X_0\), \(a\) solves
+\[
+da=-\eta a\,dt+\sqrt{\eta}\,e\,dB_t.
+\]
+Given this \(a\), let
+<a id="eq-linear-a"></a>\[\dot z=-\eta Az-Q\{\BB(a,z)+\BB(z,a)\},\qquad z_0=\theta_0. \tag{10}\]
+The boundary direction is \(\theta_t=z_t/\sqrt{\KK(z_t)}\).</p>
+
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> 
+The quadratic identity for (<a href="#eq-linear-a">10</a>) is again
+\(\dot\KK(z)=2\eta(\DD(z)-\KK(z))\).
+One way to check the nonlinear cancellation is to expand the identity
+\(\ip{(A^{-1}-I)w}{\BB(w,w)}=0\) at \(w=a+s z\):
+\((A^{-1}-I)a=0\) and \(\BB(a,a)=0\), so its coefficient of \(s^2\)
+is precisely the required cancellation.
+Thus \(\KK(z_t)\ge e^{-2\eta t}&gt;0\), and the boundary formula is global.</p>
+
+<p>We give details of continuity at \(\rho_0=0\), where division by a vanishing
+physical amplitude would otherwise be problematic. For an initial amplitude
+\(r\ge0\), solve instead for \((a,v)\) with \(w=a+r v\):
+\begin{align*}
+da&amp;=[-\eta a-rP\{\BB(a,v)+\BB(v,a)\}
+                     -r^2P\BB(v,v)]\,dt+\sqrt{\eta}\,e\,dB_t,\\
+\dot v&amp;=-\eta Av-Q\{\BB(a,v)+\BB(v,a)\}-rQ\BB(v,v),
+\qquad v_0=\theta_0.
+\end{align*}
+For \(r&gt;0\) these are the physical solution written in rescaled coordinates.
+For \(r=0\) they are the boundary linear system.
+The identity gives \(\KK(v_t)\ge e^{-2\eta t}\) in every case.
+The lifted variables are
+\(\rho_t=r\sqrt{\KK(v_t)}\) and \(\theta_t=v_t/\sqrt{\KK(v_t)}\).</p>
+
+<p>On every finite time interval, bounded initial data and a bounded realization
+of the smooth additive-noise path give a uniform physical \(L^2\) bound,
+hence a uniform bound on \(a\) in every spatial norm (as \(E\) is finite dimensional).
+In the \(v\) energy estimate both \(\BB(a,v)\) and \(r\BB(v,v)\) cancel:
+\[
+\frac12\frac d{dt}\norm v_2^2+\eta\norm{A^{1/2}v}_2^2
+=-\ip{\BB(v,a)}{v}
+\le C_\varepsilon\norm a_{C^1}\norm v_2^2.
+\]
+These estimates bound \(v\) uniformly in \(C([0,T];L^2)\cap L^2(0,T;H^1)\)
+for initial lifted states in a bounded neighborhood, with \(\eta&gt;0\) fixed.
+Here and below the constants may depend on \(\eta,T,\varepsilon\) and the
+fixed noise path; no uniformity as \(\eta\to0\) is needed in this lemma.</p>
+
+<p>To check continuity at a boundary state, take
+\((a_{0,j},r_j,\theta_{0,j})\to(a_0,0,\theta_0)\) and drive all solutions
+with the same Brownian motion. Physical continuous dependence gives
+\[
+w_j\longrightarrow a^0\quad\hbox{in }C([0,T];L^2),
+\qquad
+a_j=Pw_j\longrightarrow a^0\quad\hbox{in }C([0,T];C^1),
+\]
+where \(a^0\) is the boundary Ornstein–Uhlenbeck solution from \(a_0\).
+For indices with \(r_j=0\), the same statement follows directly from the
+finite-dimensional equation. Let \(z\) solve (<a href="#eq-linear-a">10</a>) with \(a^0\)
+and initial value \(\theta_0\). For \(d_j=v_j-z\), the difference equation is
+\begin{align*}
+\dot d_j={}&amp;-\eta A d_j
+-Q\{\BB(a_j,d_j)+\BB(d_j,a_j)\}+R_j,\\
+R_j={}&amp;-Q\{\BB(a_j-a^0,z)+\BB(z,a_j-a^0)\}
+       -r_jQ\BB(v_j,v_j).
+\end{align*}
+The required forcing convergence is explicit. In two dimensions,
+\begin{align*}
+\norm{\BB(v,v)}_{H^{-1}}
+&amp;\le C_\varepsilon\norm{u(v)}_{L^4}\norm v_{L^4}
+ \le C_\varepsilon\norm v_2^{3/2}\norm v_{H^1}^{1/2},\\
+\norm{\BB(b,z)+\BB(z,b)}_{H^{-1}}
+&amp;\le C_\varepsilon\norm b_{C^1}\norm z_2,
+\qquad b\in E.
+\end{align*}
+Consequently \(R_j\to0\) in \(L^2(0,T;H^{-1})\). For the quadratic term,
+this follows from
+\[
+\int_0^T\norm{r_jQ\BB(v_j,v_j)}_{H^{-1}}^2\,dt
+\le C_\varepsilon r_j^2
+\sup_{t\le T}\norm{v_j(t)}_2^3\,
+T^{1/2}\left(\int_0^T\norm{v_j(t)}_{H^1}^2\,dt\right)^{1/2}.
+\]
+Taking the \(L^2\) energy estimate for \(d_j\), absorbing the forcing with
+the viscous term, and using Gronwall's inequality gives
+\[
+\sup_{t\le T}\norm{d_j(t)}_2^2
+\le C_{\eta,T}\left(
+\norm{\theta_{0,j}-\theta_0}_2^2+
+\norm{R_j}_{L^2(0,T;H^{-1})}^2\right)\longrightarrow0.
+\]
+The bound \(\KK(v_j(t))\ge e^{-2\eta T}\) ensures continuity of normalization.
+The amplitudes \(r_j\sqrt{\KK(v_j(t))}\) also tend to zero uniformly on \([0,T]\).
+Interior continuity follows directly from physical continuous dependence
+and the same positive lower bound for \(\KK(w_t)\).
+Thus the lifted solutions depend continuously on initial data, almost surely
+under this coupling. Dominated convergence for bounded continuous test
+functions proves the Feller property. The boundary linear flow and its
+homogeneous normalization satisfy the flow property, so this extension
+is indeed Markov.
+Global existence in the interior follows from global two-dimensional
+Navier–Stokes; at the boundary it follows from the linear equation.
+<span class="qed">∎</span></p>
+
+</div>
+
+<p>The reconstruction map \(\pi(a,\rho,\theta)=a+\rho\theta\) is continuous
+and intertwines the lifted and physical semigroups, including at \(\rho=0\).</p>
+
+<h3>4. An invariant lifted law with a viscosity-independent directional bound</h3>
+
+<div class="thm thm-plain" id="prop-lift-invariant">
+
+<p><strong>Proposition 4.1</strong>. 
+For every \(\eta&gt;0\) the lifted process has an invariant probability
+\(\widehat\mu_\eta\) such that
+<a id="eq-direction-bound"></a>\[\int_{\mathcal X}\DD(\theta)\,d\widehat\mu_\eta\le1. \tag{11}\]</p>
+
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> 
+Start from a fixed smooth \(w_0\) with \(\KK(w_0)&gt;0\).
+The enstrophy identity yields
+\[
+\EE\norm{w_T}_2^2+
+2\eta\int_0^T\EE\norm{A^{1/2}w_t}_2^2\,dt
+=\norm{w_0}_2^2+\eta T\norm e_2^2.
+\]
+Poincaré's inequality also gives \(\sup_{t\ge0}\EE\norm{w_t}_2^2&lt;\infty\)
+for fixed initial data, uniformly in \(\eta&gt;0\).
+Since \(\KK(w)\le C_\varepsilon\norm w_2^2\), Jensen's inequality gives
+\[
+\EE\log\KK(w_T)\le
+\log\EE\KK(w_T)\le C
+\]
+with a finite \(T\)-independent upper bound.
+The lower bound \(\log\KK(w_T)\ge\log\KK(w_0)-2\eta T\)
+ensures integrability. By Lemma&nbsp;<a href="#lem-identity">2.1</a>,
+\[
+\log\KK(w_T)-\log\KK(w_0)
+=2\eta\int_0^T\{\DD(\theta_t)-1\}\,dt.
+\]
+Taking expectations therefore gives
+<a id="eq-D-time"></a>\[\limsup_{T\to\infty}\frac1T\int_0^T\EE\DD(\theta_t)\,dt\le1. \tag{12}\]
+The enstrophy bound controls the time averages of
+\(\norm a_2^2+\rho^2\). Equation (<a href="#eq-D-time">12</a>) and
+(<a href="#eq-coercive">6</a>) control the time average of \(\norm\theta_{H^1}^2\).
+The compact embedding \(H^1\Subset L^2\), together with finite dimensionality
+of \(E\) and of \(\rho\), makes the expected occupation measures on
+\(\mathcal X\) tight. Their weak limits are invariant by the Feller property
+and the Krylov–Bogoliubov argument.
+Lower semicontinuity of \(\DD\) proves (<a href="#eq-direction-bound">11</a>).
+<span class="qed">∎</span></p>
+
+</div>
+
+<p>The bound is on the <em>direction after division by the amplitude</em>.
+This is the additional compactness information that ordinary physical
+energy estimates alone would not supply.</p>
+
+<h3>5. The frozen Euler equation has no invariant law on \(\mathcal M\){M}</h3>
+
+<p>On the boundary, the only invariant law of \(a\) is
+\[
+a=f e,\qquad f\sim\gamma:=N(0,1/2).
+\]
+All unforced coordinates in \(E\) decay exponentially.
+For \(a=f\sin y\) define
+\[
+B=I-A^{-1},\qquad L=-Q\cos y\,\partial_x B.
+\]
+The inviscid boundary flow with \(f\) frozen is
+\[
+(f,\theta)\longmapsto(f,e^{tfL}\theta).
+\]
+To construct the group, extend the displayed operator to \(\HH\) and write
+\[
+L=-\cos y\,\partial_x+P\cos y\,\partial_x
+  +Q\cos y\,\partial_x A^{-1}.
+\]
+The first term generates a transport group. The second extends to a bounded
+finite-rank operator, by integration by parts against the smooth basis of
+\(E\), and the third is bounded on \(L^2\). Bounded perturbation therefore
+gives a strongly continuous group, which preserves \(Q\HH\) since \(PL=0\).
+It conserves \(\KK=-\ip{B\cdot}{\cdot}\), first on smooth data and then by
+density. Complex inner products below are linear in their first argument.</p>
+
+<div class="thm thm-plain" id="lem-block">
+
+<p><strong>Lemma 5.1</strong>. 
+For every horizontal wavenumber \(0&lt;k&lt;1\), the operator
+\[
+L_k=-ik\,C B_k,\qquad
+C=\cos y,\quad B_k=I-(k^2-\partial_y^2)^{-1}
+\]
+on complex \(L^2(\TT_y)\) has eigenvectors \(v_+,v_-\) with eigenvalues
+\(+\lambda_k,-\lambda_k\), where \(\lambda_k&gt;0\).
+Their span has one positive and one negative direction for the Hermitian
+form \(\ip{B_k\cdot}{\cdot}\).
+Its \(B_k\)-orthogonal complement is nonnegative for that form.</p>
+
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> 
+The diagonal Fourier entries of \(B_k\) are
+\(b_n=1-(k^2+n^2)^{-1}\). Only \(b_0\) is negative; all other entries are
+strictly positive. Thus \(B_k\) has negative index one and is boundedly invertible.</p>
+
+<p>Split functions into Fourier modes with even and odd integer \(n\),
+denoting the two spaces by \(H_e,H_o\). Multiplication by \(\cos y\)
+interchanges them. Write \(B_e,B_o\) for the restrictions of \(B_k\) and
+\(C_{oe}:H_e\to H_o\), \(C_{eo}=C_{oe}^*\) for the two parts of \(C\).
+The operator
+\[
+G=C_{eo}B_o C_{oe}
+\]
+is bounded, self-adjoint, nonnegative and injective:
+\(B_o\) is strictly positive and multiplication by \(\cos y\) has no
+nonzero \(L^2\) kernel. Hence \(\Ran G^{1/2}\) is dense in \(H_e\).</p>
+
+<p>Consider the self-adjoint operator
+\[
+T=G^{1/2}B_eG^{1/2}.
+\]
+It is a compact perturbation of \(G\), because \(I-B_e\) is compact.
+It has a negative direction, since \(\Ran G^{1/2}\) is dense and
+\(B_e\) is negative on the constant Fourier mode. Consequently \(T\)
+has a negative isolated eigenvalue \(-a_k^2\), \(a_k&gt;0\).
+Its negative index is at most one, so this eigenvalue is simple.
+Choose \(u\) with \(Tu=-a_k^2u\) and put
+\[
+p=G^{1/2}u,\qquad
+\lambda_k=k a_k,\qquad
+q=-\frac{ik}{\lambda_k}C_{oe}B_e p.
+\]
+Then \(GB_ep=-a_k^2p\), so direct substitution gives
+\(L_k(p,q)=\lambda_k(p,q)\) and
+\(L_k(p,-q)=-\lambda_k(p,-q)\).
+Thus take \(v_\pm=(p,\pm q)\).</p>
+
+<p>Writing \(h=\ip{B_ep}{p}=-a_k^2\norm u^2&lt;0\), we obtain
+\[
+\ip{B_oq}{q}=-h,\qquad
+\ip{B_kv_\pm}{v_\pm}=0,\qquad
+\ip{B_kv_+}{v_-}=2h\ne0.
+\]
+The span has signature \((1,1)\). Its orthogonal complement cannot have
+a negative direction, since that would give two negative directions
+for a form whose negative index is one.
+<span class="qed">∎</span></p>
+
+</div>
+
+<div class="thm thm-plain" id="prop-no-invariant">
+
+<p><strong>Proposition 5.2</strong>. 
+There is no invariant probability for
+\((f,\theta)\mapsto(f,e^{tfL}\theta)\) on \(\RR\times\mathcal M\)
+whose \(f\)-marginal is \(\gamma\).</p>
+
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> 
+Disintegrate such a probability with respect to \(f\).
+For \(\gamma\)-almost every \(f\ne0\), the conditional law of \(\theta\)
+is invariant under \(e^{tfL}\) (it suffices to use the time-one map).</p>
+
+<p>For every positive horizontal wavenumber \(k=m\varepsilon&lt;1\),
+use the eigenvectors from Lemma&nbsp;<a href="#lem-block">5.1</a>.
+The bounded linear observables
+\[
+\ell_+(z)=\ip{B_kz}{v_-},\qquad
+\ell_-(z)=\ip{B_kz}{v_+}
+\]
+are multiplied by \(e^{tf\lambda_k}\) and \(e^{-tf\lambda_k}\), respectively.
+Here we use \(L_k^*B_k+B_kL_k=0\).
+A probability on \(\mathbb C\) invariant under multiplication by a
+positive real constant different from one is concentrated at zero:
+after replacing that constant by its reciprocal if necessary, it is \(c&gt;1\);
+the disjoint annuli \(\{c^j\le |z|&lt;c^{j+1}\}\), \(j\in\mathbb Z\), all have
+the same mass, which must be zero, and cover \(\mathbb C\setminus\{0\}\).
+Thus both observables vanish almost surely in every such block.
+Lemma&nbsp;<a href="#lem-block">5.1</a> implies
+\(\ip{B_k\theta_k}{\theta_k}\ge0\) there.</p>
+
+<p>For \(|k|\ge1\) the form is already nonnegative. At \(k=0\) it is
+nonnegative after removing the mean and the \(A=1\) eigenspace.
+The projection \(Q\) does not affect any block with \(0&lt;|k|&lt;1\),
+since that block contains no \(A=1\) eigenvalue.
+Summing all horizontal blocks, with the usual reality relation for
+negative \(k\), yields \(\ip{B\theta}{\theta}\ge0\).
+This contradicts \(\KK(\theta)=-\ip{B\theta}{\theta}=1\).
+<span class="qed">∎</span></p>
+
+</div>
+
+<h3>6. Passing invariant boundary laws to zero viscosity</h3>
+
+<div class="thm thm-plain" id="lem-boundary-limit">
+
+<p><strong>Lemma 6.1</strong>. 
+There cannot exist a sequence \(\eta_j\downarrow0\) of invariant probabilities
+\(\zeta_j\) for the boundary lifted process satisfying
+\(\int\DD(\theta)\,d\zeta_j\le1\).</p>
+
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> 
+Under any stationary boundary law, \(a=f e\) and
+\[
+df=-\eta_j f\,dt+\sqrt{\eta_j}\,dB_t,\qquad \Law(f_t)=\gamma.
+\]
+The directional bound and (<a href="#eq-coercive">6</a>) make the joint laws
+of \((f,\theta)\) tight in \(\RR\times Q\HH\).
+Every weak limit is supported on \(\RR\times\mathcal M\) and has marginal
+\(\gamma\).</p>
+
+<p>We verify that a weak limit is invariant for the frozen Euler flow.
+The unnormalized boundary equation is
+\[
+\dot z_j=-\eta_j Az_j+f_j(t)Lz_j,\qquad z_j(0)=\theta.
+\]
+For a fixed finite time interval, \(f_j(t)\to f(0)\) uniformly in probability,
+uniformly for initial \(f(0)\) in compact sets.
+The energy estimate
+\[
+\frac d{dt}\norm{z_j}_2^2
+\le C_\varepsilon |f_j(t)|\norm{z_j}_2^2
+\]
+is uniform in \(\eta_j\). For smooth initial data put
+\(z_0(t)=e^{t f(0)L}\theta\).
+The equation for \(d_j=z_j-z_0\) has homogeneous part
+\(-\eta_j A+f_j(t)L\) and forcing
+\(-\eta_j A z_0+(f_j-f(0))Lz_0\).
+On the event \(\sup_{t\le T}|f_j(t)|\le R\), its \(L^2\) estimate gives
+<a id="eq-finite-time-limit"></a>\[\sup_{t\le T}\norm{d_j(t)}_2
+\le C_{R,T,\varepsilon}\left[
+\eta_j\int_0^T\norm{Az_0(t)}_2\,dt
++\sup_{t\le T}|f_j(t)-f(0)|
+ \int_0^T\norm{Lz_0(t)}_2\,dt\right]. \tag{13}\]
+This estimate uses \(L^2\) forcing rather than absorption into viscosity,
+so its constant does not contain \(\eta_j^{-1}\).
+Transport by the smooth vector field, together with the bounded smoothing
+and finite-rank terms, preserves \(H^2\) over finite time intervals;
+the integrals on the right are therefore finite and bounded uniformly for
+\(f(0)\) in compact sets and smooth initial data in a fixed bounded set.</p>
+
+<p>Approximation by smooth data and the uniform energy bound extend convergence
+to arbitrary \(L^2\) initial data. A finite smooth net of any compact set of
+initial directions makes this convergence uniform on that set.
+For initial \(|f(0)|\le R_0\), the explicit Ornstein–Uhlenbeck formula
+and a martingale maximal estimate give
+\[
+\EE\sup_{t\le T}|f_j(t)-f(0)|^2
+\le C_{T,R_0}(\eta_j+\eta_j^2)\longrightarrow0.
+\]
+Thus one may take any fixed \(R&gt;R_0\) above, with complementary event of
+probability tending to zero. This proves convergence uniformly in probability
+over compact sets of initial data in \(\RR\times Q\HH\).</p>
+
+<p>Since \(\KK(z_0(t))=1\), continuity of \(\KK\) gives
+\[
+\frac{z_j(t)}{\sqrt{\KK(z_j(t))}}\longrightarrow e^{tf(0)L}\theta
+\]
+in probability, again uniformly on compact subsets of
+\(\RR\times\mathcal M\). The denominator is always defined by
+Lemma&nbsp;<a href="#lem-feller">3.1</a>. Write \(\mathsf P_j^t\) for the boundary semigroup and
+\(\mathsf P_0^t\varphi(f,\theta)=\varphi(f,e^{tfL}\theta)\).
+For every bounded continuous \(\varphi\), the established convergence gives
+\(\mathsf P_j^t\varphi\to\mathsf P_0^t\varphi\) uniformly on compact sets.
+Indeed, the limiting image of a compact set is compact, and continuity of
+\(\varphi\) controls its values in a sufficiently small neighborhood of that
+image. Tightness, weak convergence, and invariance now give
+\[
+\int\varphi\,d\zeta
+=\lim_j\int\mathsf P_j^t\varphi\,d\zeta_j
+=\int\mathsf P_0^t\varphi\,d\zeta.
+\]
+The weak limit is therefore invariant for the frozen Euler flow.
+Proposition&nbsp;<a href="#prop-no-invariant">5.2</a> gives a contradiction.
+<span class="qed">∎</span></p>
+
+</div>
+
+<h3>7. Completion of the nonlinear argument</h3>
+
+<p>Lemma&nbsp;<a href="#lem-boundary-limit">6.1</a> implies that there is an \(\eta_0&gt;0\) such that,
+for \(0&lt;\eta&lt;\eta_0\), no invariant law supported on \(\mathcal X_0\)
+can satisfy \(\int\DD\le1\).
+Take the invariant lifted law \(\widehat\mu_\eta\) furnished by
+Proposition&nbsp;<a href="#prop-lift-invariant">4.1</a>.
+It must give positive mass to \(\{\rho&gt;0\}\).</p>
+
+<p>Both \(\{\rho=0\}\) and \(\{\rho&gt;0\}\) are invariant for the lifted process.
+The latter follows from the strict lower bound on \(\KK\);
+the former follows from the definition of the boundary extension.
+Conditioning \(\widehat\mu_\eta\) on \(\{\rho&gt;0\}\) therefore yields an invariant
+probability. Reconstructing \(w=a+\rho\theta\) gives a physical invariant
+probability concentrated on \(\{\KK(w)&gt;0\}\).
+Choose an ergodic component. It too has full mass in this set, which is
+disjoint from \(\SSS\).</p>
+
+<p>For the bounded continuous function
+\(F(w)=\min\{1,\norm{(I-P_x)w}_2^2\}\), its integral under this component
+is strictly positive. The stationary ergodic theorem implies, by
+disintegration with respect to the initial state, that for almost every
+deterministic initial state relative to this component the asserted
+time-average limit holds with probability one.
+Undoing the amplitude and time normalization preserves the sign of \(\KK\),
+the shear subspace, ergodicity, and positivity of this time-average
+criterion (with the original-amplitude version of \(F\)).
+This proves Theorem&nbsp;<a href="#thm-main">1.1</a>.</p>
+
+<h3>8. Scope and checks</h3>
+
+<ul>
+<li>The result concerns a fixed elongated aspect ratio
+\(0&lt;\varepsilon&lt;1\) and single-mode vorticity forcing \(\sigma\sin y\,dW\).
+It is equivalent to horizontal velocity forcing \(\sigma\cos y\,dW\),
+up to the harmless Brownian sign convention.
+</li>
+<li>The threshold is nonquantitative. The argument does not establish
+the draft's particular joint scaling \(\nu=o(\varepsilon^{2/3})\) as
+\(\varepsilon\downarrow0\).
+</li>
+<li>It proves the existential long-time conclusion and a non-shear
+ergodic invariant measure. It does not prove escape for every small
+perturbation or a positive transverse Lyapunov exponent.
+In particular, the original statement quantifying over <em>every</em> state
+near the shear subspace is false: for an exact shear, \(F(\omega_t)=0\)
+for all \(t\), and the proposed exit time is infinite.
+</li>
+<li>The exact stochastic cancellation uses forcing in the eigenspace
+\(A=1\). General shear forcing with several vertical frequencies requires
+a different argument.
+</li>
+<li>At \(\varepsilon\ge1\), the cone \(\{\KK&gt;0\}\) is empty.
+The proof therefore cannot erroneously imply the same conclusion on
+shorter domains.
+</li>
+<li>The whole eigenspace \(A=1\) is removed in the lift, so
+\(\varepsilon^{-1}\in\NN\) causes no coercivity gap.
+</li>
+<li>The zero-viscosity limit is taken only for invariant
+<em>boundary</em> laws whose normalized directions already satisfy the
+compactness estimate. No interchange of an uncontrolled long-time
+limit with a Galerkin or inviscid limit is used.
+</li>
+<li>The frozen scalar inviscid random system can still have zero
+Lyapunov exponent at fixed noise correlation time. The present proof
+uses the viscous identity before taking the limit; its normalization
+would lose tightness in that purely inviscid model.
+</li>
+</ul>
+
+<p><strong>Review conclusion.</strong> 
+The exact cone identity supplies a directional compactness estimate before
+any inviscid limit is taken. The expanded estimates in
+Lemmas&nbsp;<a href="#lem-feller">3.1</a> and&nbsp;<a href="#lem-boundary-limit">6.1</a> justify the two delicate
+continuity passages. Lemma&nbsp;<a href="#lem-block">5.1</a> proves the spectral obstruction
+directly, without inferring random growth from frozen eigenvalues.
+Together these steps establish the stated existence theorem within the
+standard \(L^2\) stochastic Navier–Stokes framework. An independent specialist
+review remains appropriate before treating this research argument as a
+publication-ready theorem; no independent review is claimed here.</p>
+
+<h3 id="references">References</h3>
+
+<ol class="bib">
+
+</li>
+<li id="bib-local" value="1">
+Local research manuscript, <em>Instability of shear flows</em>,
+unpublished.
+</li>
+<li id="bib-HM" value="2">
+M. Hairer and J. C. Mattingly,
+<em>Ergodicity of the 2D Navier–Stokes equations with degenerate
+stochastic forcing</em>, Ann. Math. 164 (2006), 993–1032.
+<a href="https://arxiv.org/abs/math/0406087">https://arxiv.org/abs/math/0406087</a>.
+Background for the Markov and parabolic framework; the uniqueness
+hypotheses of that work are not invoked here.
+</li>
+<li id="bib-LX" value="3">
+Z. Lin and M. Xu, <em>Metastability of Kolmogorov flows and inviscid
+damping of shear flows</em>.
+<a href="https://arxiv.org/abs/1707.00278">https://arxiv.org/abs/1707.00278</a>.
+Background on Hamiltonian methods for shear linearizations;
+Lemma&nbsp;<a href="#lem-block">5.1</a> is proved directly in this note.
+</li>
+</ol>
+{% endraw %}

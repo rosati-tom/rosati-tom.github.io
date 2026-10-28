@@ -7,3 +7,13 @@ lang: "en"
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+
+# AI-written proofs: one folder per writeup in proofs/, holding its page
+# (index.html). Listed on /proofs/, kept out of the sitemap.
+defaults:
+  - scope:
+      path: "proofs"
+    values:
+      layout: proof
+      math: true
+      sitemap: false

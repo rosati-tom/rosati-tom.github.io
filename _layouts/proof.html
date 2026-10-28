@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<p><a href="/proofs/">← AI proofs</a></p>
+
+<hr>
+
+<h2>{{ page.title }}</h2>
+
+<p class="proof-meta">
+  {{ page.date | date: "%-d %B %Y" }}{% if page.model %} · written by {{ page.model }}{% endif %}{% if page.status %} · {{ page.status }}{% endif %}
+</p>
+
+<p class="ai-note">This proof was written by an AI model{% if page.status %} ({{ page.status }}){% endif %}. It may contain errors.</p>
+
+{{ content }}

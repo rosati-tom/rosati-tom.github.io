@@ -113,3 +113,21 @@ h2 {
 /* CV lists: dates in a fixed-width column, text aligned beside them */
 .cv-list li { padding-left: 7.5em; margin: 0.35em 0; }
 .cv-list .yr { display: inline-block; width: 7.5em; margin-left: -7.5em; }
+
+/* AI proofs */
+.proof-meta { color: #6b6b6b; margin-top: -0.6em; }
+.ai-note {
+  border-left: 3px solid #d8cfc4;
+  padding: 0.2em 0 0.2em 0.9em;
+  color: #555;
+  font-style: italic;
+}
+.proof-status { color: #6b6b6b; }
+.thm, .proof, .abstract { margin: 1.1em 0; }
+.thm-plain > p { font-style: italic; }
+.thm-plain > p strong { font-style: normal; }
+.abstract { font-size: 0.95em; margin: 1.5em 2em; }
+.qed { float: right; }
+.bib li { margin: 0.4em 0; }
+mjx-container[display="true"] { overflow-x: auto; overflow-y: hidden; }
+@media (max-width: 700px) { .abstract { margin: 1.5em 0; } }
