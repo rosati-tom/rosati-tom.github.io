@@ -17,7 +17,7 @@ It takes place on Fridays 10-12.
 
 > 6/11 (6M42): Introduction: mean field.
 
-> 13/11 (6M42): Luca - Introduction: φ⁴ and fundamental questions (Section 1.4).
+> 13/11 (6M42): Luca - Mean field (Section 1.4).
 
 > 20/11 (408): Pedro - Gaussian fields (Section 1.5 and Chapter 2).
 
