@@ -90,7 +90,7 @@ SPDEs.
 
 ## Teaching
 
-* <span class="yr">2026/27</span>Probability Theory 1 (MATH60028), and a [reading group](/rg.html) on renormalisation group.
+* <span class="yr">2026/27</span>Probability Theory 1 (MATH60028), <br> and a [reading group](/rg.html) on renormalisation group.
 * <span class="yr">2025/26</span>Brownian Motion (MA4F7/ST403), Stochastic PDEs (ST924), <br> and a [reading group](/gmc.html) on the GMC.
 * <span class="yr">2024/25</span>Brownian Motion (MA4F7/ST403).
 * <span class="yr">2023/24</span>Brownian Motion (MA4F7/ST403), and Stochastic PDEs (ST924).
@@ -114,6 +114,11 @@ SPDEs.
 * <span class="yr">2017–2020</span>PhD, Freie Universität Berlin.
 * <span class="yr">2015–2017</span>MSc, Humboldt Universität zu Berlin.
 * <span class="yr">2012–2015</span>BSc, Università di Roma Tor Vergata.
+{: .cv-list}
+
+**Editorial activity**
+
+* <span class="yr">2026–present</span>*Stochastics and Dynamics*, member of the editorial board.
 {: .cv-list}
 
 [Full CV](/assets/cv.pdf)
